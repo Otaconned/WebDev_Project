@@ -1,3 +1,10 @@
+/* header components */
+.active {
+  background-color: #8ecae6;
+}
+.header-background{
+  background-color: #f77f00;
+}
 ul {
   background-color: #003366;
   position: fixed;
@@ -17,9 +24,8 @@ li a {
 li a:hover{
   background-color: #002347;
 }
-.active {
-  background-color: #8ecae6;
-}
-.header-background{
-  background-color: #f77f00;
+
+/* body/main components */
+body {
+  style="background-color:#eae2b7"
 }
