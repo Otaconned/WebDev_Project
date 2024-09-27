@@ -32,22 +32,7 @@ body {
 }
 main{
   display: flex;
-  flex-direction: column;
-  align-item: center;
-}
-.button {
-  background-color: #003366;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-}
-.button:active {
-  transform: scale(.98);
+  justify-content: center;
 }
 
 /* head components */
@@ -56,7 +41,7 @@ main{
   background-size: cover;
   background-position: center;
   justify-content: center;
-  position: fixed;
+  position: relative;
   display: flex;
   opacity: .5;
   height: 300px;
@@ -78,6 +63,34 @@ main{
   font-style: italic;
 }
 
+/*flavortext formatting*/
+.flavor-text{
+  text-align: center;
+  margin-top: 100px;
+}
+.flavor-text h2 {
+  font-family: "impact";
+  text-align: center;
+}
+.flavor-text p {
+  font-style: italics;
+  text-align: center;
+}
+.button {
+  background-color: #003366;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button:active {
+  transform: scale(.98);
+}
+
 /* image carousel components */
 .image-carousel {
   width: 1200px;
@@ -92,16 +105,6 @@ main{
   width: 1200px;
   height: 200px;
   object-fit:cover;
-}
-
-/*flavortext formatting*/
-.flavor-text h2 {
-  font-family: "impact";
-  text-align: center;
-}
-.flavor-text p {
-  font-style: italics;
-  text-align: center;
 }
 
 footer {
