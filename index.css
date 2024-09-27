@@ -33,10 +33,14 @@ body {
 /* head components */
 .header-background{
   background-image: url("photos/mealspread.jpg");
+  background-size: cover;
+  background-position: center;
   opacity: .5;
   display: flex;
   justify-content: center;
   margin-top: 48px;
+  position: relative;
+  height: 300px;
 }
 .header-text{
   position: absolute;
@@ -57,13 +61,18 @@ body {
 
 /* image carousel components */
 .image-carousel {
-  margin: 0px;
-  box-shadow: 2px 2px 8px;
+  position: relative;
+  height: 200px;
+  margin-bottom: 30px;
+  display: flex;
+  width: fit-content;
+  animation: carousel 50s linear infinite;
+  overflow: hidden;
 }
 .image-carousel img {
-  animation: carousel 50s linear infinite;
+  box-shadow: 2px 2px 8px;
 }
 @keyframes carousel {
-  0%{translate(0)}
+  0%{translate(0%)}
   100%{translate(-50%)}
 }
