@@ -30,13 +30,17 @@ body {
   background-color:#ffe5cc;
 }
 .button {
-  background-color: #ffd3ab;
+  background-color: #003366;
   border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
+  text-decoration: none;
   display: inline-block;
-  font-size 16px;
+  font-size: 16px;
+}
+.button:active {
+  transform: scale(.98);
 }
 
 /* head components */
