@@ -64,11 +64,12 @@ body {
   width: 1200px;
   height: 200px;
   margin: 40px;
+  left: 300px;
   position: relative;
   justify-content: center;
   overflow: hidden;
 }
-.image-carousel img{
+.image-carousel slide{
   width: 1200px;
   height: 200px;
   object-fit:cover;
