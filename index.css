@@ -61,8 +61,8 @@ body {
 
 /* image carousel components */
 .image-carousel {
-  width: 400px;
-  height: 400px;
+  width: 1200px;
+  height: 200px;
   position: relative;
   justify-content: center;
   overflow: hidden;
