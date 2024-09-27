@@ -44,7 +44,7 @@ body {
 }
 .header-text{
   position: absolute;
-  background-color: ffd3ab;
+  background-color: #ffd3ab;
   transform: translate(50px, 50px);
   top: 100px;
   left: 100px;
