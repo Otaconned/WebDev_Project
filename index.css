@@ -42,6 +42,7 @@ body {
   background-color: ffd3ab;
   padding: 20px, 40px;
   text-align: center;
+  z-index: 1;
 }
 .header-text h1 {
   font-family: "Impact";
