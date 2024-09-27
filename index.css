@@ -38,16 +38,16 @@ body {
   justify-content: center;
   margin-top: 48px;
 }
-.header-text{
+/* .header-text{
   position: absolute;
   background-color: #ffd3ab;
   transform: translate(50px, 50px);
   top: 100px;
-  left: 200px;
+  left: 500px;
   padding: 10px 20px;
   text-align: center;
   color: white;
-}
+} */
 .header-text h1 {
   font-family: "Impact";
 }
