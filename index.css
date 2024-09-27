@@ -36,12 +36,12 @@ body {
   opacity: .5;
   display: flex;
   justify-content: center;
-  margin-top: 45px;
+  margin-top: 48px;
 }
 .header-text{
   background-color: ffd3ab;
-  width: 40px;
-  height: 20px;
+  width: 100px;
+  height: 10px;
   padding: 20px;
   text-align: center;
   z-index: 1;
