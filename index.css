@@ -54,3 +54,16 @@ body {
 .header-text h3 {
   font-style: italic;
 }
+
+/* image carousel components */
+.image-carousel {
+  margin: 0px;
+  box-shadow: 2px 2px 8px;
+}
+.image-carousel img {
+  animation: carousel 50s linear infinite;
+}
+@keyframes carousel {
+  0%{translate(0)}
+  100%{translate(-50%)}
+}
