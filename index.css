@@ -33,6 +33,7 @@ body {
 main{
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 /* head components */
@@ -55,6 +56,7 @@ main{
   padding: 10px 20px;
   text-align: center;
   color: white;
+  z-index: 1;
 } 
 .header-text h1 {
   font-family: "Impact";
