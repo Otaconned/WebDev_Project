@@ -5,15 +5,15 @@ header > h1 {
 header > h2 {
   font-style: italic;
 }
-.active {
-  background-color: #8ecae6;
-}
 .header-background{
   background-color: #ffb978;
 }
 ul {
   list-style-type: none;
   background-color: #003366;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
@@ -23,13 +23,15 @@ li {
 }
 li a {
   display: block;
-  padding: 8px;
   color: white;
   text-align: center;
   padding: 14px 16px;
 }
 li a:hover{
   background-color: #002347;
+}
+.active {
+  background-color: #8ecae6;
 }
 
 /* body/main components */
