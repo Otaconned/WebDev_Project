@@ -58,3 +58,12 @@ body {
 .header-text h3 {
   font-style: italic;
 }
+
+/* image carousel components */
+.image-carousel {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  justify-content: center;
+  overflow: hidden;
+}
