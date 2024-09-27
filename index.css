@@ -34,10 +34,9 @@ body {
 .header-background{
   background-image: url("photos/mealspread.jpg");
   opacity: .5;
-}
-.header-background{
-  text-align: center;
-  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  /* margin-top: 50px */
 }
 .header-text{
   background-color: ffd3ab;
