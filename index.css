@@ -28,6 +28,9 @@ li a:hover{
 /* body/main components */
 body {
   background-color:#ffe5cc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .button {
   background-color: #003366;
