@@ -60,9 +60,9 @@ body {
 }
 .header-text{
   position: absolute;
-  background-color: #ffd3ab;
+  background-color: #003366;
   transform: translate(50px, 50px);
-  top: 60px;
+  top: 45px;
   left: 600px;
   padding: 10px 20px;
   text-align: center;
