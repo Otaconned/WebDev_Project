@@ -1,13 +1,4 @@
-/* header components */
-header > h1 {
-  font-family: "Impact";
-}
-header > h2 {
-  font-style: italic;
-}
-.header-background{
-  background-color: #ffb978;
-}
+/* Nav Bar components */
 ul {
   list-style-type: none;
   background-color: #003366;
@@ -36,5 +27,26 @@ li a:hover{
 
 /* body/main components */
 body {
-  style="background-color:#ffe5cc"
+  background-color:#ffe5cc;
+}
+
+/* head components */
+.header-background{
+  background-image: url("photos/mealspread.jpg");
+  opacity: .5;
+}
+.header-background{
+  text-align: center;
+  margin-top: 50px;
+}
+.header-text{
+  background-color: ffd3ab;
+  padding: 20px, 40px;
+  text-align: center;
+}
+.header-text h1 {
+  font-family: "Impact";
+}
+.header-text h3 {
+  font-style: italic;
 }
