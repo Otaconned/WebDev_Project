@@ -32,7 +32,7 @@ body {
 
 /* head components */
 .header-background{
-  background-image: url("photos/mealspread.jpg");
+  background-image: url("photos/foodbanner.jpg");
   background-size: cover;
   background-position: center;
   opacity: .5;
