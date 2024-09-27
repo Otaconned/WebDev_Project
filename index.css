@@ -37,14 +37,20 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 48px;
+  position: relative;
+  display: in-line block;
+  height: auto;
+  width: 100%;
 }
 .header-text{
+  position: absolute;
   background-color: ffd3ab;
-  width: 100px;
-  height: 10px;
-  padding: 20px;
+  transform: translate(50px, 50px);
+  top: 100px;
+  left: 100px;
+  padding: 10px 20px;
   text-align: center;
-  z-index: 1;
+  color: white;
 }
 .header-text h1 {
   font-family: "Impact";
