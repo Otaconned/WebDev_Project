@@ -37,10 +37,6 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 48px;
-  position: relative;
-  display: in-line block;
-  height: auto;
-  width: 100%;
 }
 .header-text{
   position: absolute;
