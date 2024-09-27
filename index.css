@@ -74,3 +74,17 @@ body {
   height: 200px;
   object-fit:cover;
 }
+
+/*flavortext formatting*/
+.flavor-text h2 {
+  font-family: "impact";
+  text-align: center;
+}
+.flavor-text p {
+  font-style: italics;
+  text-align: center;
+}
+
+footer {
+  font-size: 12px;
+}
