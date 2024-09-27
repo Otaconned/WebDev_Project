@@ -2,9 +2,10 @@
 ul {
   list-style-type: none;
   background-color: #003366;
+  overflow: hidden;
+  position: fixed;
   margin: 0;
   padding: 0;
-  position: fixed;
   top: 0;
   width: 100%;
 }
@@ -16,6 +17,7 @@ li a {
   color: white;
   text-align: center;
   padding: 14px 16px;
+  text-decoration: none;
 }
 li a:hover{
   background-color: #002347;
@@ -41,10 +43,10 @@ main{
   background-image: url("photos/foodbanner.jpg");
   background-size: cover;
   background-position: center;
+  background: rgba(.5)
   justify-content: center;
   position: relative;
   display: flex;
-  opacity: .5;
   height: 300px;
 }
 .header-text{
@@ -98,7 +100,7 @@ main{
   width: 1200px;
   height: 200px;
   margin: 40px;
-  left: 275px;
+  left: 260px;
   position: relative;
   justify-content: center;
   overflow: hidden;
