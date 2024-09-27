@@ -69,7 +69,7 @@ body {
   justify-content: center;
   overflow: hidden;
 }
-.image-carousel slide{
+.image-carousel img.slide{
   width: 1200px;
   height: 200px;
   object-fit:cover;
