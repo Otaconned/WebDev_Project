@@ -68,15 +68,15 @@ main{
 }
 
 /*flavortext formatting*/
-.flavor-text{
+.flavortext{
   text-align: center;
   margin-top: 100px;
 }
-.flavor-text h2 {
+.flavortext h2 {
   font-family: "impact";
   text-align: center;
 }
-.flavor-text p {
+.flavortext p {
   font-style: italics;
   text-align: center;
 }
