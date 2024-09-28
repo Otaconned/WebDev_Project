@@ -1,83 +1,91 @@
 ul {
-list-style-type: none;
-background-color: #003366;
-margin: 0;
-padding: 0;
-overflow: hidden;
-position: fixed;
-top: 0;
-width: 100%;
-font-family: arial;
+  list-style-type: none;
+  background-color: #003366;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family: arial;
 }
 li {
-float: left;
+  float: left;
 }
 li a {
-display: block;
-color: white;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 li a:hover{
-background-color: #002347;
+  background-color: #002347;
 }
 .active {
-background-color: #8ecae6;
+  background-color: #8ecae6;
 }
 
 body {
-background-color:#ffe5cc;
-margin: 0;
-padding: 0;
+  background-color:#ffe5cc;
+  margin: 0;
+  padding: 0;
 }
 main{
-display: flex;
-justify-content: center;
-flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+img{
+  display: block;
+  margin: 20px;
 }
 
 .text-content{
-text-align: center;
-margin-top: 50px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 200px;
 }
 .text-content h1 {
-font-family: "impact";
-text-align: center;
-color: #002347;
+  font-family: "impact";
+  text-align: center;
+  color: #002347;
 }
 .text-content h2 {
-font-family: "impact";
-text-align: center;
+  font-family: "impact";
+  text-align: center;
 }
 .text-content h3 {
-font-family: "impact";
-text-align: center;
+  font-family: "impact";
+  text-align: center;
 }
 .text-content p {
-font-family: "arial";
-font-style: italic;
-text-align: center;
+  font-family: "arial";
+  font-style: italic;
+  text-align: center;
 }
 .button {
-background-color: #003366;
-border: none;
-color: white;
-padding: 15px 32px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
-border-radius: 8px;
+  background-color: #003366;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
 }
 .button:hover {
-transform: scale(.98);
-cursor: pointer;
+  transform: scale(.98);
+  cursor: pointer;
 }
 
 footer {
 position: fixed;
 width: 100%;
+left: 0;
+bottom: 0;
 background-color: #002347;
 color: white;
 font-size: 12px;
