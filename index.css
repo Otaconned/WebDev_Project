@@ -44,8 +44,9 @@ main{
   background-image: url("photos/foodbanner.jpg");
   background-size: cover;
   background-position: center;
-  opacity: .5;
+  opacity: .7;
   justify-content: center;
+  align-items: center;
   position: relative;
   display: flex;
   height: 300px;
@@ -53,7 +54,7 @@ main{
 }
 .header-text{
   position: absolute;
-  background-color: #003366;
+  background-color: rgba(0,51,102,1);
   transform: translate(50px, 50px);
   top: 50px;
   left: 600px;
@@ -73,13 +74,21 @@ main{
   text-align: center;
   margin-top: 50px;
 }
-.flavortext h1 h2 h3 {
+.flavortext h1 {
+  font-family: "impact";
+  text-align: center;
+}
+.flavortext h2 {
+  font-family: "impact";
+  text-align: center;
+}
+.flavortext h3 {
   font-family: "impact";
   text-align: center;
 }
 .flavortext p {
   font-family: "arial";
-  font-style: italics;
+  font-style: italic;
   text-align: center;
 }
 .button {
@@ -91,10 +100,11 @@ main{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  cursor: pointer;
+  border-radius: 8px;
 }
-.button:active {
+.button:hover {
   transform: scale(.98);
+  cursor: pointer;
 }
 
 /* image carousel components */
@@ -114,5 +124,7 @@ main{
 }
 
 footer {
+  background-color: #002347;
+  color: white;
   font-size: 12px;
 }
