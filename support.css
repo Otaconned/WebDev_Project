@@ -39,7 +39,8 @@ main{
 
 img{
   display: block;
-  margin: 20px;
+  margin: 10px;
+  left: 555px;
 }
 
 .text-content{
