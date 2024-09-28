@@ -70,9 +70,9 @@ main{
 /*flavortext formatting*/
 .flavortext{
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
-.flavortext h2 {
+.flavortext h1 h2 h3 {
   font-family: "impact";
   text-align: center;
 }
