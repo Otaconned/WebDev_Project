@@ -76,7 +76,10 @@ cursor: pointer;
 }
 
 footer {
+position: fixed;
+width: 100%;
 background-color: #002347;
 color: white;
 font-size: 12px;
+font-family: arial;
 }
