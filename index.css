@@ -64,8 +64,10 @@ color: white;
 } 
 .header-text h1 {
 font-family: "Impact";
+font-size: 40;
 }
 .header-text h3 {
+font-family: "Arial";
 font-style: italic;
 }
 
