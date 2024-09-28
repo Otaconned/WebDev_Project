@@ -91,6 +91,12 @@ main{
   font-style: italic;
   text-align: center;
 }
+#dedication {
+  font-family: "arial";
+  font-style: italic;
+  text-align: center;
+  font-size: 20px;
+}
 .button {
   background-color: #003366;
   border: none;
