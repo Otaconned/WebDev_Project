@@ -82,13 +82,13 @@ main{
   font-family: "impact";
   text-align: center;
 }
-.flavortext h3 {
-  font-family: "impact";
-  text-align: center;
-}
 .flavortext p {
   font-family: "arial";
   font-style: italic;
+  text-align: center;
+}
+.dedication h3 {
+  font-family: "impact";
   text-align: center;
 }
 #dedication {
