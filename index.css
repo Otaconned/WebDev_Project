@@ -77,6 +77,7 @@ main{
   text-align: center;
 }
 .flavortext p {
+  font-family: "arial";
   font-style: italics;
   text-align: center;
 }
