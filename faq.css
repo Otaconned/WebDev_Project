@@ -24,14 +24,47 @@ li a:hover{
 }
 
 body {
+  font-family: "arial";
   background-color:#ffe5cc;
   margin: 0;
   padding: 0;
-}
-main{
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  padding-top: 50px;
+}
+
+.textbox{
+  background-color: white;
+  width: 400px;
+  padding: 22px 30px;
+  border-radius: 5px;
+  line-height: 1.8;
+}
+
+#more{
+  display: none;
+}
+
+#more:checked ~ .expand {
+  display: block;
+}
+
+#more:checked ~ label {
+  display: none;
+}
+
+.expand {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  background-color: #002347;
+  padding: 3px 13px;
+  border-radius: 3px;
+  margin-top: 12px;
 }
 
 footer {
