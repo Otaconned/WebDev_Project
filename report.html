@@ -16,10 +16,24 @@
 		</ul>
 	</nav>
   <main>
-    
+    <h1>Report an Issue</h1>
+    <form method="post" action="">
+	<p>
+	   <label for="email">E-Mail:</label>
+	   <input type="text" id="email" name="email" required>
+	</p>
+	<p>
+	   <label for="issue">Description of Your Issue:</label>
+	   <textarea id="issue" name="issue" row="5" cols="40" required></textarea>
+	</p>
+	<button>Submit</button>
+    </form>
+    <p id="note">Wait! Have you checked our FAQ?</p>
   </main>
 </body>
 <footer>
-  &copy; 2024 Harrelson. Images used under copyright doctrine of fair use in an educational context.
+  &copy; 2024 Harrelson. Images used under copyright doctrine of fair use in an educational context. 
+  <a href="https://validator.w3.org/">Validate HTML</a>
+  <a href="https://jigsaw.w3.org/css-validator/">Validate CSS</a>
 </footer>
 </html>
