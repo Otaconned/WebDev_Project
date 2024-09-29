@@ -41,6 +41,16 @@ body {
   line-height: 1.8;
 }
 
+label {
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  background-color: #002347;
+  padding: 3px 13px;
+  border-radius: 3px;
+  margin-top: 12px;
+}
+
 #more{
   display: none;
 }
@@ -55,16 +65,6 @@ body {
 
 .expand {
   display: none;
-}
-
-label {
-  display: inline-block;
-  cursor: pointer;
-  color: white;
-  background-color: #002347;
-  padding: 3px 13px;
-  border-radius: 3px;
-  margin-top: 12px;
 }
 
 footer {
