@@ -49,6 +49,11 @@ body {
   cursor: pointer;
 }
 
+#note{
+  font-size: 12px;
+  font-style: italic;
+}
+
 footer {
 position: fixed;
 width: 100%;
