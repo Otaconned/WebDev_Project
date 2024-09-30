@@ -55,20 +55,13 @@ label {
   scale: (.98);
 }
 
-#more{
-  display: none;
+.textbox {
+  overflow: hidden;
+  max-height: 100px;
 }
 
-#more:checked ~ .expand {
-  display: block;
-}
-
-#more:checked ~ label {
-  display: none;
-}
-
-.expand {
-  display: none;
+.more {
+  max-height: 1000px;
 }
 
 footer {
