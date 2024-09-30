@@ -23,14 +23,23 @@ li a:hover{
   background-color: #002347;
 }
 
+#title{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 body {
   font-family: "arial";
   background-color:#ffe5cc;
   margin: 0;
   padding: 0;
+  padding-top: 50px;
+}
+
+main {
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  flex-direction: column;
 }
 
 .button {
@@ -50,6 +59,8 @@ body {
 }
 
 #note{
+  text-align: center;
+  margin-top: 20px;
   font-size: 12px;
   font-style: italic;
 }
