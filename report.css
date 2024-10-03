@@ -42,6 +42,16 @@ ul {
     align-items: center;
     justify-content: center;
   }
+
+  #thanks{
+    text-align: center;
+    font-style: italic;
+  }
+
+  h1{
+    font-family: "impact";
+    color: #002347;
+  }
   
   img {
     width: 25%;
@@ -50,6 +60,22 @@ ul {
 
   form {
     text-align: center;
+  }
+
+  textarea{
+    max-width: 600x;
+    height: 200px;
+  }
+
+  label[for=email]{
+    font-family: "impact";
+    color: #002347;
+  }
+
+  label[for=issue]{
+    font-size: 30px;
+    font-family: "impact";
+    color: #002347;
   }
   
   .button {
