@@ -78,7 +78,7 @@ ul {
     color: #002347;
   }
   
-  .button {
+.button {
     background-color: #003366;
     border: none;
     color: white;
@@ -89,17 +89,30 @@ ul {
     font-size: 16px;
     border-radius: 8px;
   }
-  .button:hover {
+
+.button:hover {
     transform: scale(.98);
     cursor: pointer;
   }
   
-  #note{
+#note{
     text-align: center;
     margin-top: 20px;
     font-size: 12px;
     font-style: italic;
   }
+
+#display{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    transform: translate(-50%, -50%);
+    background-color: #003366;
+    color: white;
+    cursor: pointer;
+}
   
   footer {
   position: fixed;
