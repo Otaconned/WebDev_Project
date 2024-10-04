@@ -1,3 +1,7 @@
+let emailInput = document.getElementById('');
+let issueInput = document.getElementById('');
+let isValid = true;
+
 document.getElementById('report').addEventListener('submit', function(event){
   event.preventDefault();
 
