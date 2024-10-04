@@ -22,11 +22,11 @@
     <form method="POST" action="https://sheetdb.io/api/v1/iou9b53tgzy3n" id="report">
 	<p>
 	   <label for="email">E-Mail:</label>
-	   <input type="text" id="email" name="data[Email]" required>
+	   <input type="text" id="email" name="data[Email]" max="50" required>
 	</p>
 	<p>
 	   <label for="issue">Description of Your Issue:</label><br>
-	   <textarea id="issue" name="data[Issue]" row="20" cols="75" required></textarea>
+	   <textarea id="issue" name="data[Issue]" row="20" cols="75" max="280" required></textarea>
 	</p>
 	<button>Submit</button>
     </form>
