@@ -38,6 +38,11 @@ main {
     justify-content: center;
   }
 
+h1, p{
+    font-family: "impact";
+    color: #002347;
+  }
+
   footer {
   position: fixed;
   width: 100%;
