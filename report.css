@@ -109,11 +109,13 @@ ul {
     left: 50%;
     width: 25%;
     transform: translate(-50%, -50%);
-    height: 150px;
-    width: 200px;
+    height: 50px;
+    width: 150px;
     background-color: #003366;
     color: white;
     cursor: pointer;
+    text-align: center;
+    font-family: impact;
 }
   
   footer {
