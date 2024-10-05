@@ -4,7 +4,6 @@
 	<meta charset="utf-8" />
 	<title>report</title>
 	<link rel="stylesheet" type="text/css" href="report.css">
-    <h1 id="title">Report an Issue</h1>
 </head>
 <body>
   <nav>
@@ -17,30 +16,31 @@
 	</nav>
     
   <main>
-	<p id="thanks">Thank you for taking the time out of your day to help improve our site! Please allow for up to three days in response time.</p>
-    <img src="photos/personguiding.png" alt="person guiding">
-    <form method="POST" action="https://sheetdb.io/api/v1/iou9b53tgzy3n" id="report">
-	<p>
-	   <label for="email">E-Mail:</label>
-	   <input type="text" id="email" name="data[Email]" max="50" required>
-	</p>
-	<p>
-	   <label for="issue">Description of Your Issue:</label><br>
-	   <textarea id="issue" name="data[Issue]" row="20" cols="75" max="280" required></textarea>
-	</p>
-	<button>Submit</button>
-    </form>
-
-    <p id="note">Wait! Have you checked our <a href="faq.html">FAQ?</a></p>
-    <div id="display">
-	    Thank you for your input!
-    </div>
+	  <h1 id="title">Report an Issue</h1>
+	  <p id="thanks">Thank you for taking the time out of your day to help improve our site! Please allow for up to three days in response time.</p>
+	  <img src="photos/personguiding.png" alt="person guiding">
+	  <form method="POST" action="https://sheetdb.io/api/v1/iou9b53tgzy3n" id="report">
+		  <p>
+			  <label for="email">E-Mail:</label>
+			  <input type="text" id="email" name="data[Email]" max="50" required>
+		  </p>
+		  <p>
+			  <label for="issue">Description of Your Issue:</label><br>
+			  <textarea id="issue" name="data[Issue]" row="20" cols="75" max="280" required></textarea>
+		  </p>
+		  <button>Submit</button>
+	  </form>
+	  
+	  <p id="note">Wait! Have you checked our <a href="faq.html">FAQ?</a></p>
+	  <div id="display">
+		  Thank you for your input!
+	  </div>
   </main>
-</body>
-<footer>
-  &copy; 2024 Harrelson. Images used under copyright doctrine of fair use in an educational context. 
-  <a href="https://validator.w3.org/">Validate HTML</a>
-  <a href="https://jigsaw.w3.org/css-validator/">Validate CSS</a>
+  <footer>
+	  &copy; 2024 Harrelson. Images used under copyright doctrine of fair use in an educational context. 
+  	  <a href="https://validator.w3.org/">Validate HTML</a>
+  	  <a href="https://jigsaw.w3.org/css-validator/">Validate CSS</a>
   <script src="report.js"></script>
 </footer>
+</body>
 </html>
