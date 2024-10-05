@@ -37,20 +37,25 @@ main {
   flex-direction: column;
 }
 
+/*Hiding overflow content pre-JS to create a more 'dropdown' look.*/
 .text-content {
-  overflow: hidden;
+  overflow: hidden; 
   max-height: 100px;
   text-align: center;
+  background-color: #003366;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 .text-content h3{
   font-family: "impact";
   text-align: center;
-  color: #002347;
+  color: white;
 }
 .text-content p{
   font-family: "arial";
   font-style: italic;
   text-align: center;
+  color: white;
 }
 
 .expanded {
