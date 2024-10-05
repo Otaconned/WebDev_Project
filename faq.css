@@ -37,9 +37,20 @@ main {
   flex-direction: column;
 }
 
-.content {
+.text-content {
   overflow: hidden;
   max-height: 100px;
+  text-align: center;
+}
+.text-content h3{
+  font-family: "impact";
+  text-align: center;
+  color: #002347;
+}
+.text-content p{
+  font-family: "arial";
+  font-style: italic;
+  text-align: center;
 }
 
 .expanded {
