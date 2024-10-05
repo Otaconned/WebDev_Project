@@ -30,6 +30,7 @@ body {
   background-color:#ffe5cc;
   margin: 0;
   padding: 0;
+  font-family: impact, arial;
 }
 main{
   display: flex;
@@ -49,24 +50,17 @@ img{
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.text-content h1 {
+.text-content h1, .text-content h2, .text-content h3 {
   font-family: "impact";
   text-align: center;
   color: #002347;
-}
-.text-content h2 {
-  font-family: "impact";
-  text-align: center;
-}
-.text-content h3 {
-  font-family: "impact";
-  text-align: center;
 }
 .text-content p {
   font-family: "arial";
   font-style: italic;
   text-align: center;
 }
+
 .button {
   background-color: #003366;
   border: none;
