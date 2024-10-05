@@ -54,7 +54,6 @@ main{
 }
 .header-text{
   position: absolute;
-  background-color: rgba(0,51,102,1);
   transform: translate(50px, 50px);
   top: 50px;
   left: 555px;
