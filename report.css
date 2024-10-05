@@ -63,7 +63,7 @@ ul {
   }
 
   textarea{
-    max-width: 600x;
+    width: 600x;
     height: 200px;
   }
 
@@ -108,9 +108,8 @@ ul {
     top: 50%;
     left: 50%;
     width: 25%;
-    transform: translate(-50%, -50%);
     height: 50px;
-    width: 150px;
+    transform: translate(-50%, -50%);
     background-color: #003366;
     color: white;
     cursor: pointer;
@@ -119,7 +118,7 @@ ul {
     padding: 20px;
 }
   
-  footer {
+footer {
   position: fixed;
   width: 100%;
   left: 0;
@@ -128,4 +127,4 @@ ul {
   color: white;
   font-size: 12px;
   font-family: arial;
-  }
+}
