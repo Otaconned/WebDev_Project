@@ -1,3 +1,4 @@
+/* Styling for the navigation bar */
 ul {
   list-style-type: none;
   background-color: #003366;
@@ -23,6 +24,7 @@ li a:hover{
   background-color: #002347;
 }
 
+/* Styling for the body elements */
 body {
   font-family: "arial";
   background-color:#ffe5cc;
@@ -37,9 +39,9 @@ main {
   flex-direction: column;
 }
 
-/*Hiding overflow content pre-JS to create a more 'dropdown' look.*/
+/* This styling previously relied on JS for functionality. It is a placeholder to give the 'idea' of the final product once JS is included. */
 .text-content {
-  overflow: hidden; 
+  overflow: hidden; /* creates the apperance of more information while keeping each box self-contained */
   max-height: 100px;
   text-align: center;
   background-color: #003366;
@@ -58,17 +60,14 @@ main {
   color: white;
 }
 
-.expanded {
-  max-height: 1000px;
-}
-
+/*Styling for the footer*/
 footer {
-position: fixed;
-width: 100%;
-left: 0;
-bottom: 0;
-background-color: #002347;
-color: white;
-font-size: 12px;
-font-family: arial;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: #002347;
+  color: white;
+  font-size: 12px;
+  font-family: arial;
 }
