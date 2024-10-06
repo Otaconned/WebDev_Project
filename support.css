@@ -4,10 +4,10 @@ ul {
   background-color: #003366;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
+  overflow: hidden; /*used to keep content contained*/
+  position: fixed; /*used to pin the navbar*/
+  top: 0; /*used to keep the header at the top of the page*/
+  width: 100%; /*used to stretch the navbar the full window*/
   font-family: arial;
 }
 li {
@@ -22,6 +22,7 @@ li a {
 }
 li a:hover{
   background-color: #002347;
+  cursor: pointer;
 }
 .active {
   background-color: #8ecae6;
@@ -51,7 +52,7 @@ img{
   margin-top: 50px;
   margin-bottom: 50px;
 }
-/* combined to improve CSS formatting */
+/* multiple declarations combined to improve CSS formatting */
 .text-content h1, .text-content h2, .text-content h3 {
   font-family: "impact";
   text-align: center;
@@ -79,12 +80,12 @@ img{
   cursor: pointer;
 }
 
-/* Styling for the footer to keep it stretched and pinned to the bottom of the page */
+/* Styling for the footer */
 footer {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  bottom: 0;
+  position: fixed; /*used to keep the footer pinned to the bottom of the page*/
+  width: 100%; /*used to stretch the footer the width of the page*/
+  left: 0; /*used to correct formatting that caused the footer to appear truncated*/
+  bottom: 0; /*used to ensure the footer registers at the bottom of the page*/
   background-color: #002347;
   color: white;
   font-size: 12px;
