@@ -1,6 +1,6 @@
 /* Styling for the navigation bar -- referenced from notes and W3 schools */
 ul {
-    list-style-type: none;
+    list-style-type: none; /* remove default formatting and re-style */
     background-color: #003366;
     margin: 0;
     padding: 0;
@@ -87,7 +87,7 @@ ul {
     color: white;
     padding: 15px 32px;
     text-align: center;
-    text-decoration: none;
+    text-decoration: none; /* remove default formatting and re-style */
     display: inline-block;
     font-size: 16px;
     border-radius: 8px;
