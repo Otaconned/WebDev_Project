@@ -1,4 +1,4 @@
-/* Styling for the navigation bar */
+/* Styling for the navigation bar -- referenced from notes and W3 schools */
 ul {
   list-style-type: none;
   background-color: #003366;
@@ -30,7 +30,7 @@ li a:hover{
 /* body/main components */
 body {
   background-color:#ffe5cc;
-  margin: 0;
+  margin: 0; /* set to 0 to remove defaults and help block div elements */
   padding: 0;
 }
 main{
@@ -39,22 +39,22 @@ main{
   flex-direction: column;
 }
 
-/* Styling for the header section */
+/* Styling for the header section -- referenced from notes and W3 schools */
 .header-background{
   background-image: url("photos/foodbanner.jpg");
   background-size: cover;
   background-position: center;
-  opacity: .7;
+  opacity: .7; /* set for contrast and to keep from being eye-straining */
   justify-content: center;
   align-items: center;
   position: relative;
   display: flex;
   height: 300px;
-  margin-top: 48px;
+  margin-top: 48px; /* used to keep the header image from overlapping with the navigation bar */
 }
 .header-text{
   position: absolute;
-  transform: translate(50px, 50px);
+  transform: translate(50px, 50px); /* This, alongside top and left, are used to center the text over the background */
   top: 50px;
   left: 555px;
   padding: 10px 20px;
@@ -121,6 +121,10 @@ main{
 }
 
 footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
   background-color: #002347;
   color: white;
   font-size: 12px;
