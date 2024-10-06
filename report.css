@@ -105,7 +105,23 @@ ul {
     font-style: italic;
   }
 
-/* JS formatting to allow for a pop-up window on form submission will eventually be input here. */
+/* This formatting will interact with JS to help create a pop-up window that thanks the user for their feedback, and prevents the navigation to another page */
+#display{
+    display: none; /*used to hide the pop-up before trigger occurs*/
+    position: fixed;
+    top: 50%; /*used to center the pop-up*/
+    left: 50%;
+    width: 25%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 150px;
+    background-color: #003366; /*the following are used to style the pop-up*/
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-family: impact;
+    padding: 20px;
+}
 
 /* Styling for the footer to keep it stretched and pinned to the bottom of the page */
 footer {
