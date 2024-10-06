@@ -54,7 +54,7 @@ main{
 }
 .header-text{
   position: absolute;
-  transform: translate(50px, 50px); /* This, alongside top and left, are used to center the text over the background */
+  transform: translate(50px, 50px); /* This, alongside top and left, are used to center the text over the background -- referenced from textbook */
   top: 50px;
   left: 555px;
   padding: 10px 20px;
@@ -120,6 +120,7 @@ main{
   object-fit:cover;
 }
 
+/* Styling for the footer to keep it stretched and pinned to the bottom of the page */
 footer {
   position: fixed;
   width: 100%;
