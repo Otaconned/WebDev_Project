@@ -1,4 +1,4 @@
-/* Nav Bar components */
+/* Styling for the navigation bar */
 ul {
   list-style-type: none;
   background-color: #003366;
@@ -39,7 +39,7 @@ main{
   flex-direction: column;
 }
 
-/* head components */
+/* Styling for the header section */
 .header-background{
   background-image: url("photos/foodbanner.jpg");
   background-size: cover;
@@ -70,7 +70,7 @@ main{
   font-style: italic;
 }
 
-/*flavortext formatting*/
+/* formatting for the general text area(s) */
 .flavortext{
   text-align: center;
   margin-top: 50px;
@@ -80,12 +80,14 @@ main{
   text-align: center;
   color: #002347;
 }
+/* seperated from the headers for more control despite minimal changes */
 .flavortext p {
   font-family: "arial";
   font-style: italic;
   text-align: center;
 }
 
+/* button formatting */
 .button {
   background-color: #003366;
   border: none;
@@ -98,11 +100,11 @@ main{
   border-radius: 8px;
 }
 .button:hover {
-  transform: scale(.98);
+  transform: scale(.98); /* give the apperance of interactivity */
   cursor: pointer;
 }
 
-/* image carousel components */
+/* image carousel components -- this relies on JS to function correctly, and has been adjusted to display a placeholder image. */
 .image-carousel {
   width: 1200px;
   height: 200px;
