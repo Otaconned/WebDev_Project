@@ -1,3 +1,4 @@
+/* Styling for the navigation bar -- referenced from notes and W3 schools */
 ul {
     list-style-type: none;
     background-color: #003366;
@@ -27,15 +28,15 @@ ul {
     text-align: center;
     margin-bottom: 20px;
   }
-  
+
+/* Styling for the body elements */
   body {
     font-family: "arial";
     background-color:#ffe5cc;
-    margin: 0;
+    margin: 0; /* set to 0 to remove defaults and help block div elements */
     padding: 0;
     padding-top: 50px;
   }
-  
   main {
     display: flex;
     flex-direction: column;
@@ -62,11 +63,13 @@ ul {
     text-align: center;
   }
 
+/* used to set the space for responses */
   textarea{
     width: 600x;
     height: 200px;
   }
 
+/* adjustments to the labels of the form, [for=email] syntax referenced from textbook */
   label[for=email]{
     font-family: "impact";
     color: #002347;
@@ -89,12 +92,12 @@ ul {
     font-size: 16px;
     border-radius: 8px;
   }
-
 .button:hover {
     transform: scale(.98);
     cursor: pointer;
   }
-  
+
+/* defined via ID for greater control as compared to rest of body section */
 #note{
     text-align: center;
     margin-top: 20px;
@@ -102,22 +105,9 @@ ul {
     font-style: italic;
   }
 
-#display{
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 25%;
-    height: 50px;
-    transform: translate(-50%, -50%);
-    background-color: #003366;
-    color: white;
-    cursor: pointer;
-    text-align: center;
-    font-family: impact;
-    padding: 20px;
-}
-  
+/* JS formatting to allow for a pop-up window on form submission will eventually be input here. */
+
+/* Styling for the footer to keep it stretched and pinned to the bottom of the page */
 footer {
   position: fixed;
   width: 100%;
