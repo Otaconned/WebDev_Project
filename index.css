@@ -71,17 +71,17 @@ main{
 }
 
 /* formatting for the general text area(s) */
-.flavortext{
+.main-text{
   text-align: center;
   margin-top: 50px;
 }
-.flavortext h1, .flavortext h2, .flavortext h3 {
+.main-text h1, .main-text h2, .main-text h3 {
   font-family: "impact";
   text-align: center;
   color: #002347;
 }
 /* seperated from the headers for more control despite minimal changes */
-.flavortext p {
+.main-text p {
   font-family: "arial";
   font-style: italic;
   text-align: center;
