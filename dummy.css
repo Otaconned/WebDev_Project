@@ -1,3 +1,4 @@
+/* Styling for the navigation bar */
 ul {
     list-style-type: none;
     background-color: #003366;
@@ -22,7 +23,8 @@ ul {
   li a:hover{
     background-color: #002347;
   }
-  
+
+/* Styling for the body elements */
   body {
     font-family: "arial";
     background-color:#ffe5cc;
@@ -43,7 +45,8 @@ h1, p{
     color: #002347;
   }
 
-  footer {
+/* Styling for the footer */
+footer {
   position: fixed;
   width: 100%;
   left: 0;
@@ -52,5 +55,5 @@ h1, p{
   color: white;
   font-size: 12px;
   font-family: arial;
-  }
+}
 
