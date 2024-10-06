@@ -57,7 +57,7 @@ img {
   overflow: hidden; /* creates the apperance of more information while keeping each box self-contained */
   max-height: 100px;
   text-align: center;
-  margin: 80px;
+  margin: 50px;
   background-color: #003366;
   border-radius: 10px;
   margin-bottom: 20px;
