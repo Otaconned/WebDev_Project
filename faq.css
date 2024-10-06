@@ -1,4 +1,4 @@
-/* Styling for the navigation bar */
+/* Styling for the navigation bar -- referenced from notes and W3 schools */
 ul {
   list-style-type: none;
   background-color: #003366;
@@ -30,7 +30,7 @@ body {
   background-color:#ffe5cc;
   margin: 0;
   padding: 0;
-  padding-top: 50px;
+  padding-top: 50px; /* used to keep the content from being hidden behind the navigation bar */
 }
 main {
   display: flex;
@@ -45,9 +45,9 @@ h1{
 }
 
 img {
-  display: block;
+  display: block; /* using block to displace the content around the image */
   width: 25%;
-  margin-left: auto;
+  margin-left: auto; /* using auto to center the image */
   margin-right: auto;
   margin-bottom: 20px;
 }
@@ -74,7 +74,7 @@ img {
   color: white;
 }
 
-/*Styling for the footer*/
+/* Styling for the footer to keep it stretched and pinned to the bottom of the page */
 footer {
   position: fixed;
   width: 100%;
