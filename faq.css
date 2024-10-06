@@ -32,11 +32,24 @@ body {
   padding: 0;
   padding-top: 50px;
 }
-
 main {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+h1{
+  font-family: "impact";
+  text-align: center;
+  color: #002347;
+}
+
+img {
+  display: block;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
 
 /* This styling previously relied on JS for functionality. It is a placeholder to give the 'idea' of the final product once JS is included. */
