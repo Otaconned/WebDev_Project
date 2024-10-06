@@ -5,9 +5,9 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  position: fixed;
+  position: fixed; /*used to pin the navbar*/
   top: 0;
-  width: 100%;
+  width: 100%; /*used to stretch the navbar the full window*/
   font-family: arial;
 }
 li {
@@ -20,8 +20,9 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-li a:hover{
+li a:hover{ /*used to create the apperance of interactivity*/
   background-color: #002347;
+  cursor: pointer;
 }
 .active {
   background-color: #8ecae6;
@@ -75,6 +76,7 @@ main{
   text-align: center;
   margin-top: 50px;
 }
+/* multiple declarations to preserve CSS formatting */
 .main-text h1, .main-text h2, .main-text h3 {
   font-family: "impact";
   text-align: center;
@@ -100,7 +102,7 @@ main{
   border-radius: 8px;
 }
 .button:hover {
-  transform: scale(.98); /* give the apperance of interactivity */
+  transform: scale(.98); /* used to give the apperance of interactivity */
   cursor: pointer;
 }
 
@@ -117,7 +119,7 @@ main{
 .image-carousel img.slide{
   width: 1200px;
   height: 200px;
-  object-fit:cover;
+  object-fit:cover; /*used to keep differently-sized images within the confines of the height/width, referenced from MDN webdocs*/
 }
 
 /* Styling for the footer to keep it stretched and pinned to the bottom of the page */
