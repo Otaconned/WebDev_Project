@@ -4,82 +4,82 @@ ul {
     background-color: #003366;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
+    overflow: hidden; /*used to keep content contained*/
+    position: fixed; /*used to pin the navbar*/
+    top: 0; /*used to keep the header at the top of the page*/
+    width: 100%; /*used to stretch the navbar the full window*/
     font-family: arial;
-  }
-  li {
+}
+li {
     float: left;
-  }
-  li a {
+}
+li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  li a:hover{
+}
+li a:hover{
     background-color: #002347;
-  }
+    cursor: pointer;
+}
   
-  #title{
+#title{
     text-align: center;
     margin-bottom: 20px;
-  }
+}
 
 /* Styling for the body elements */
-  body {
+body {
     font-family: "arial";
     background-color:#ffe5cc;
     margin: 0; /* set to 0 to remove defaults and help block div elements */
     padding: 0;
     padding-top: 50px;
-  }
-  main {
+}
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  #thanks{
+#thanks{
     text-align: center;
     font-style: italic;
-  }
+}
 
-  h1{
+h1{
     font-family: "impact";
     color: #002347;
-  }
+}
   
-  img {
-    width: 25%;
+img {
+    width: 25%; /* Set to 25% to be kept consistent with other pages */
     margin-bottom: 20px;
-  }
+}
 
-  form {
+form {
     text-align: center;
-  }
+}
 
 /* used to set the space for responses */
-  textarea{
+textarea{
     width: 600x;
     height: 200px;
-  }
+}
 
-/* adjustments to the labels of the form, [for=email] syntax referenced from textbook */
-  label[for=email]{
+/* adjustments to the labels of the form, [for=email] syntax referenced from MDN and textbook on query selector formatting */
+label[for=email]{
     font-family: "impact";
     color: #002347;
-  }
-
-  label[for=issue]{
+}
+label[for=issue]{
     font-size: 30px;
     font-family: "impact";
     color: #002347;
-  }
+}
   
 .button {
     background-color: #003366;
@@ -125,10 +125,10 @@ ul {
 
 /* Styling for the footer to keep it stretched and pinned to the bottom of the page */
 footer {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  bottom: 0;
+  position: fixed; /*used to keep the footer pinned to the bottom of the page*/
+  width: 100%; /*used to stretch the footer the width of the page*/
+  left: 0; /*used to correct formatting that caused the footer to appear truncated*/
+  bottom: 0; /*used to ensure the footer registers at the bottom of the page*/
   background-color: #002347;
   color: white;
   font-size: 12px;
