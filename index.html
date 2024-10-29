@@ -5,6 +5,8 @@
 	<meta charset="utf-8" />
 	<title>index</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> <!--Import jQuery via the CDN-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js" integrity="sha512-lvcHFfj/075LnEasZKOkj1MF6aLlWtmpFEyd/Kc+waRnlulG5er/2fEBA5DBff4BZrcwfvnft0PiAv4cIpkjpw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
 	<nav>
@@ -47,7 +49,11 @@
 			</a>
 		</div>
 		<!--When JS is implemented, these images will be automatically cycled through-->
-		<div class="image-carousel"> 
+		<div class="image-carousel"
+			data-cycle-fx=carousel
+			data-cycle-timeout=2000
+			data-cycle-carousel-visible=5
+			> 
 			<img class="slide" src="photos/orangechicken.jpg" alt="A plate of orange chicken">
 			<img class="slide" src="photos/Tacos.jpg" alt="A plate with tacos">
 			<img class="slide" src="photos/greenbeans.jpg" alt="A meal with meat and greenbeans">
