@@ -1,4 +1,4 @@
-let slidesArray = 0;
+/* let slidesArray = 0;
 imageCarousel();
 
 function imageCarousel(){
@@ -11,4 +11,4 @@ function imageCarousel(){
   if (slidesArray > s.length){slidesArray = 1}
   slide[slidesArray-1].style.display = "block";
   setTimeout(imageCarousel, 2000);
-}
+} */
