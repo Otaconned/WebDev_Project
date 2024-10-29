@@ -1,4 +1,4 @@
-let emailInput = document.getElementById('');
+/*let emailInput = document.getElementById('');
 let issueInput = document.getElementById('');
 let isValid = true;
 
@@ -13,4 +13,10 @@ document.getElementById('report').addEventListener('submit', function(event){
 
 document.getElementById('display').addEventListener('click', function(){
   this.style.display = 'none';
+}); */
+
+$("report").validate({
+  rules: {
+    email: {
+      required: true,
 });
