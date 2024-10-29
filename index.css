@@ -110,7 +110,7 @@ main{
 }
 
 /* image carousel components -- this relies on JS to function correctly, and has been adjusted to display a placeholder image. */
-.image-carousel {
+.cycle-slideshow {
   width: 1200px;
   height: 200px;
   margin: 40px;
@@ -119,7 +119,7 @@ main{
   justify-content: center;
   overflow: hidden;
 }
-.image-carousel img.slide{
+.cycle-slideshow img.slide{
   width: 1200px;
   height: 200px;
   object-fit:cover; /*used to keep differently-sized images within the confines of the height/width, referenced from MDN webdocs*/
