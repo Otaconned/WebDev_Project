@@ -6,8 +6,6 @@
 	<meta charset="utf-8" />
 	<title>report</title>
 	<link rel="stylesheet" type="text/css" href="report.css">
-	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> <!--Import jQuery via the CDN-->
-	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.21.0/dist/jquery.validate.min.js"></script>
 </head>
 <body>
   <nav>
@@ -26,21 +24,21 @@
 	  <form method="POST" action="https://sheetdb.io/api/v1/iou9b53tgzy3n" id="report">
 		  <p>
 			  <label for="email">E-Mail:</label>
-			  <input type="text" id="email" name="data[Email]" max="50" required>
+			  <input type="text" id="email" name="email" required>
+			  <span class="error"></span>
 		  </p>
 		  <p>
 			  <label for="issue">Description of Your Issue:</label><br>
-			  <textarea id="issue" name="data[Issue]" row="20" cols="75" max="280" required></textarea>
+			  <textarea id="issue" name="issue" required></textarea>
+			  <span class="error"></span>
 		  </p>
-		  <button>Submit</button>
+		  <button type="submit">Submit</button>
 	  </form>
 
 	  <!--A way to ensure users have access to the FAQ, and have considered the information there before lodging complaint/concerns-->
 	  <p id="note">Wait! Have you checked our <a href="faq.html">FAQ?</a></p>
 	  <!--intended to serve as a popup using an eventListener in JS that is not implemented here-->
-	  <div id="display">
-		  Thank you for your input!
-	  </div>
+	  <div id="display" style="display:none;">Thank you for your input!</div>
   </main>
   <footer>
 	  &copy; 2024 Harrelson. Images used under copyright doctrine of fair use in an educational context. 
