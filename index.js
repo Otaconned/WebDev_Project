@@ -6,7 +6,7 @@ carousel();
 function carousel(){
   let slides = document.getElementsByClassName("slide");
   
-  let (let i = 0; i < slides.length; i++){
+  for (let i = 0; i < slides.length; i++){
     slides[i].style.display = "none";
   }
   
@@ -15,7 +15,7 @@ function carousel(){
     slidesArray = 1
   }
 
-  let (let i = 0; i < slides.length; i++){
+  for (let i = 0; i < slides.length; i++){
     slides[i].classList.remove = ("active");
   }
 
