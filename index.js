@@ -1,3 +1,5 @@
+'use strict'; 
+
 let slidesArray = 0;
 imageCarousel();
 
