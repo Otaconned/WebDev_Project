@@ -1,16 +1,20 @@
 'use strict'; 
 
-let slidesArray = 0;
-imageCarousel();
+let slideIndex = 0;
+carousel();
 
-function imageCarousel(){
-  let slide = document.getElementsByClassName("slide");
+function carousel(){
+  let slides = document.getElementsByClassName("slide");
   
-  let (let i = 0; i < s.length; i++){
+  let (let i = 0; i < slides.length; i++){
     slide[i].style.display = "none";
   }
+  
   slidesArray++
-  if (slidesArray > s.length){slidesArray = 1}
-  slide[slidesArray-1].style.display = "block";
-  setTimeout(imageCarousel, 2000);
+  if (slideIndex > slides.length){
+    slidesArray = 1
+  }
+  
+  slide[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000);
 }
