@@ -1,15 +1,22 @@
-'use strict'; 
+'use strict';
 
-let slideIndex = 0;
 const slides = Array.from(document.querySelectorAll('.slide'));
 carousel();
 
 function carousel(){
+  const currentSlide = document.querySelector('.slide.active');
+  const slideIndex = slides.indexOf(currentSlide);
+
+  let nextSlide;
   
-  slides.forEach(slide => slide.classList.remove('active'));
-  slide[slideIndex].classList.add("active");
-  slideIndex = (slideIndex + 1) % slides.length;
-  
-  setTimeout(carousel, 2000);
+  if(currentSlide === 0){
+    nextSlide = slides.length - 1;
+  } else {
+    nextSlide = currentSlide - 1;
+  }
+
+  slides[nextSlide].classList.add('active');
+  currentSlide.classList.remove('active');
 }
 
+setInterval(carousel, 2000);
