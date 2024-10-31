@@ -7,20 +7,15 @@ function carousel(){
   let slides = document.getElementsByClassName("slide");
   
   for (let i = 0; i < slides.length; i++){
-    slides[i].style.display = "none";
+    slides[i].classList.remove("active");
   }
   
-  slidesArray++
-  if (slideIndex > slides.length){
-    slidesArray = 1
+  slidesIndex++
+  if (slideIndex > slides.length - 1){
+    slidesIndex = 0
   }
-
-  for (let i = 0; i < slides.length; i++){
-    slides[i].classList.remove = ("active");
-  }
-
-  slide[slideIndex-1].classList.add = ("active");
-  slide[slideIndex-1].style.display = "block";
+  
+  slide[slideIndex-1].classList.add("active");
   setTimeout(carousel, 2000);
 }
 
