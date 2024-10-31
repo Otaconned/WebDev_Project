@@ -1,22 +1,12 @@
 'use strict';
 
 const slides = Array.from(document.querySelectorAll('.slide'));
-carousel();
+let currentIndex = 0;
 
 function carousel(){
-  const currentSlide = document.querySelector('.slide.active');
-  const slideIndex = slides.indexOf(currentSlide);
-
-  let nextSlide;
-  
-  if(currentSlide === 0){
-    nextSlide = slides.length - 1;
-  } else {
-    nextSlide = currentSlide - 1;
-  }
-
-  slides[nextSlide].classList.add('active');
-  currentSlide.classList.remove('active');
+  slides[currentIndex].classList.remove('active');
+  currentIndex = (currentIndex + 1) % slides.length;
+  slides[currentIndex].classList.add('active');
 }
 
 setInterval(carousel, 2000);
