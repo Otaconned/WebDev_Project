@@ -110,7 +110,7 @@ main{
 }
 
 /* image carousel components -- this relies on JS to function correctly, and has been adjusted to display a placeholder image. */
-.cycle-slideshow {
+.carousel {
   width: 1200px;
   height: 200px;
   margin: 40px;
@@ -119,10 +119,15 @@ main{
   justify-content: center;
   overflow: hidden;
 }
-.cycle-slideshow img.slide{
+.slide {
   width: 1200px;
   height: 200px;
   object-fit:cover; /*used to keep differently-sized images within the confines of the height/width, referenced from MDN webdocs*/
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.slide.active {
+  opacity: 1;
 }
 
 /* Styling for the footer to keep it stretched and pinned to the bottom of the page */
