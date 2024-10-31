@@ -111,6 +111,7 @@ main{
 
 /* image carousel components -- this relies on JS to function correctly, and has been adjusted to display a placeholder image. */
 .carousel {
+  list-style-type: none;
   width: 1200px;
   height: 200px;
   margin: 40px;
@@ -119,17 +120,21 @@ main{
   justify-content: center;
   overflow: hidden;
 }
+.slide {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
 .slide > img {
   width: 1200px;
   height: 200px;
   position: absolute;
   object-fit:cover; /*used to keep differently-sized images within the confines of the height/width, referenced from MDN webdocs*/
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
+  display: block;
 }
 .slide.active {
   opacity: 1;
   position: relative;
+  transition-delay: 0ms;
 }
 
 /* Styling for the footer to keep it stretched and pinned to the bottom of the page */
