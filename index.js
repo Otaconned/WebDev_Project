@@ -2,9 +2,9 @@
 
 let slideIndex = 0;
 carousel();
+const slides = Array.from(document.querySelectorAll('.slide'));
 
 function carousel(){
-  let slides = document.getElementsByClassName("slide");
   
   for (let i = 0; i < slides.length; i++){
     slides[i].classList.remove("active");
