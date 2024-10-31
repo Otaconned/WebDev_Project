@@ -122,12 +122,14 @@ main{
 .slide {
   width: 1200px;
   height: 200px;
+  position: absolute;
   object-fit:cover; /*used to keep differently-sized images within the confines of the height/width, referenced from MDN webdocs*/
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
 .slide.active {
   opacity: 1;
+  position: relative;
 }
 
 /* Styling for the footer to keep it stretched and pinned to the bottom of the page */
