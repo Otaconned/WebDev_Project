@@ -7,7 +7,7 @@ const slides = Array.from(document.querySelectorAll('.slide'));
 function carousel(){
   
   for (let i = 0; i < slides.length; i++){
-    slides[i].classList.remove("active");
+    slides[slideIndex].classList.remove("active");
   }
   
   slidesIndex++
