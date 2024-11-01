@@ -56,25 +56,19 @@ img {
 }
 
 /* This styling previously relied on JS for functionality. It is a placeholder to give the 'idea' of the final product once JS is included. */
-.text-content {
-  overflow: hidden; /* creates the apperance of more information while keeping each box self-contained */
-  max-height: 100px;
-  text-align: center;
-  margin: 30px;
-  background-color: #003366;
-  border-radius: 10px;
-  margin-bottom: 20px;
+.content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: mas-height .5s ease, opacity .5s ease;
 }
-.text-content h3{
-  font-family: "impact";
-  text-align: center;
-  color: #8ecae6;
+.content.expanded {
+  max-height: 200px;
+  opacity: 1;
 }
-.text-content p{
-  font-family: "arial";
-  font-style: italic;
-  text-align: center;
-  color: white;
+
+button:hover {
+  cursor: pointer;
 }
 
 /* Styling for the footer to keep it stretched and pinned to the bottom of the page */
