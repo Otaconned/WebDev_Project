@@ -32,8 +32,8 @@ li a:hover{
 
 .resize-text {
   position: fixed;
-  top: 20px;
-  left: 20px;
+  bottom: 20px;
+  right: 20px;
   background-color: #003366;
   padding: 10px;
   border-radius: 5px;
@@ -43,6 +43,9 @@ li a:hover{
   background: none;
   border: none;
   font-size: 18px;
+}
+.resize-text button:hover {
+  background-color: #002347;
   cursor: pointer;
 }
 
