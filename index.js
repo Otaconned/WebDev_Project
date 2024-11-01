@@ -10,21 +10,3 @@ function carousel(){
 }
 
 setInterval(carousel, 2000);
-
-const increaseSize = document.getElementById('increase-size');
-const decreaseSize = document.getElementById('decrease-size');
-const text = document.querySelector("p");
-
-let currentSize = 16;
-
-increaseSize.addEventListener('click' ()=> {
-  currentSize += 2;
-  text.style.fontSize = currentSize;
-}
-
-increaseSize.addEventListener('click' ()=> {
-  if (currentSize > 10) {
-    currentSize -= 2;
-    text.style.fontSize = currentSize;
-  }
-}
