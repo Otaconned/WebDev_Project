@@ -1,9 +1,10 @@
 'use strict';
 
 /*Function to autoplay a carousel of images, using references to MD3 Schools & in-class carousel*/
+let currentIndex = 0;
+
 function carousel(){
   const slides = Array.from(document.querySelectorAll('.slide'));
-  let currentIndex = 0;
   
   slides[currentIndex].classList.remove('active');
   currentIndex = (currentIndex + 1) % slides.length;
