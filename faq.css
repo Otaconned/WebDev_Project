@@ -1,120 +1,120 @@
 /* Styling for the navigation bar -- referenced from notes and W3 schools */
 ul {
-  list-style-type: none; /* remove default formatting and re-style */
-  background-color: #003366;
-  margin: 0;
-  padding: 0;
-  overflow: hidden; /*used to keep content contained*/
-  position: fixed; /*used to pin the navbar*/
-  top: 0; /*used to keep the header at the top of the page*/
-  width: 100%; /*used to stretch the navbar the full window*/
-  font-family: arial;
+list-style-type: none; /* remove default formatting and re-style */
+background-color: #003366;
+margin: 0;
+padding: 0;
+overflow: hidden; /*used to keep content contained*/
+position: fixed; /*used to pin the navbar*/
+top: 0; /*used to keep the header at the top of the page*/
+width: 100%; /*used to stretch the navbar the full window*/
+font-family: arial;
 }
 li {
-  float: left;
+float: left;
 }
 li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
 }
 
 /*used to create the apperance of interactivity*/
 li a:hover { 
-  background-color: #002347;
-  cursor: pointer;
+background-color: #002347;
+cursor: pointer;
 }
 
 /* Styling for the body elements */
 body {
-  font-family: "arial";
-  background-color:#ffe5cc;
-  margin: 0;
-  padding: 0;
-  padding-top: 50px; /* used to keep the content from being hidden behind the navigation bar */
+font-family: "arial";
+background-color:#ffe5cc;
+margin: 0;
+padding: 0;
+padding-top: 50px; /* used to keep the content from being hidden behind the navigation bar */
 }
 main {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+display: flex;
+justify-content: center;
+flex-direction: column;
 }
 
 h1{
-  font-family: "impact";
-  text-align: center;
-  color: #002347;
+font-family: "impact";
+text-align: center;
+color: #002347;
 }
 
 img {
-  display: block; /* using block to displace the content around the image */
-  width: 25%; /* Set to 25% to be kept consistent with other pages */
-  margin-left: auto; /* using auto to center the image */
-  margin-right: auto;
-  margin-bottom: 20px;
+display: block; /* using block to displace the content around the image */
+width: 25%; /* Set to 25% to be kept consistent with other pages */
+margin-left: auto; /* using auto to center the image */
+margin-right: auto;
+margin-bottom: 20px;
 }
 
 h3 {
-  font-family: "impact";
-  text-align: center;
-  color: #8ecae6;
+font-family: "impact";
+text-align: center;
+color: #8ecae6;
 }
 
 p {
-  font-family: "arial";
-  font-style: italic;
-  text-align: center;
-  color: white;
+font-family: "arial";
+font-style: italic;
+text-align: center;
+color: white;
 }
 
 /* This styling previously relied on JS for functionality. It is a placeholder to give the 'idea' of the final product once JS is included. */
 div {
-  height: 100px;
-  width: 70%;
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 10px;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #003366;
+height: 100px;
+width: 70%;
+margin: 20px auto;
+padding: 20px;
+border-radius: 10px;
+flex-direction: column;
+justify-content: center;
+background-color: #003366;
 }
 .content span {
-  display: inline-block;
-  height: 0;
-  overflow: hidden;
-  transition: opacity 2s;
-  opacity: 0;
+display: inline-block;
+height: 0;
+overflow: hidden;
+transition: opacity 2s;
+opacity: 0;
 }
 .content span.fade-in {
-  height: auto;
-  opacity: 1;
+height: auto;
+opacity: 1;
 }
 
 button {
-  text-decoration: none;
-  border: none;
-  background: none;
-  color: white;
-  text-align: center;
-  font-size: 16px;
-  position: absolute;
-  top: 25%;
-  right: 10px;
+text-decoration: none;
+border: none;
+background-color: #003366;
+color: white;
+padding: 10px;
+text-align: center;
+font-size: 16px;
+justify-content: right;
+display: inline-block;
 }
 button:hover {
-  cursor: pointer;
-  background-color: #002347;
+cursor: pointer;
+background-color: #002347;
 }
 
 /* Styling for the footer to keep it stretched and pinned to the bottom of the page */
 footer {
-  position: fixed; /*used to keep the footer pinned to the bottom of the page*/
-  width: 100%; /*used to stretch the footer the width of the page*/
-  left: 0; /*used to correct formatting that caused the footer to appear truncated*/
-  bottom: 0; /*used to ensure the footer registers at the bottom of the page*/
-  background-color: #002347;
-  color: white;
-  font-size: 12px;
-  font-family: arial;
+position: fixed; /*used to keep the footer pinned to the bottom of the page*/
+width: 100%; /*used to stretch the footer the width of the page*/
+left: 0; /*used to correct formatting that caused the footer to appear truncated*/
+bottom: 0; /*used to ensure the footer registers at the bottom of the page*/
+background-color: #002347;
+color: white;
+font-size: 12px;
+font-family: arial;
 }
