@@ -71,7 +71,7 @@ p {
 /* This styling previously relied on JS for functionality. It is a placeholder to give the 'idea' of the final product once JS is included. */
 div {
   height: 100px;
-  width: 100%;
+  width: 70%;
   margin: 20px auto;
   padding: 20px;
   border-radius: 10px;
