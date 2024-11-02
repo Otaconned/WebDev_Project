@@ -1,8 +1,9 @@
 let buttons = document.querySelectorAll('.expand');
 
-for (let i = 0; i < buttons.length; i++){
-    buttons[i].addEventListener('click', function(event){
-        let span = event.target.previousElementSibling.querySelector('span');
-        span.classList.add('fade-in');
+buttons.forEach(button => {
+    button.addEventListener('click', function(){
+        let span = button.previousElementSibling;
+        content.classList.toggle('fade-in');
+        button.textContent = content.classList.contains('fade-in') ? 'Read Less' : 'Read More';
     });
-}
+});
