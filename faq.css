@@ -69,7 +69,7 @@ p {
 }
 
 /* This styling previously relied on JS for functionality. It is a placeholder to give the 'idea' of the final product once JS is included. */
-.accordion {
+div {
   height: 100px;
   width: 300px;
   margin: 50px auto;
