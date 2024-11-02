@@ -56,14 +56,15 @@ img {
 }
 
 /* This styling previously relied on JS for functionality. It is a placeholder to give the 'idea' of the final product once JS is included. */
-.content {
-  max-height: 0;
+.content span {
+  display: inline-block;
+  height: 0;
   overflow: hidden;
+  transition: opacity 2s;
   opacity: 0;
-  transition: max-height .5s ease, opacity .5s ease;
 }
-.content.expanded {
-  max-height: 200px;
+.content span.fade-in {
+  height: auto;
   opacity: 1;
 }
 
