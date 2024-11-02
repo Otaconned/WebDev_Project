@@ -60,7 +60,7 @@ img {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  transition: mas-height .5s ease, opacity .5s ease;
+  transition: max-height .5s ease, opacity .5s ease;
 }
 .content.expanded {
   max-height: 200px;
