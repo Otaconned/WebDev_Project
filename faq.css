@@ -94,14 +94,13 @@ div {
 button {
   text-decoration: none;
   border: none;
-  background-color: #003366;
+  background: none;
   color: white;
-  padding: 10px;
   text-align: center;
   font-size: 16px;
-  flex-direction: column;
-  justify-content: center;
-  display: inline-block;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
 button:hover {
   cursor: pointer;
