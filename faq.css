@@ -57,15 +57,16 @@ margin-bottom: 20px;
 
 h3 {
 font-family: "impact";
-text-align: center;
 color: #8ecae6;
+font-size: 18px;
+text-align: center;
 }
 
 p {
 font-family: "arial";
 font-style: italic;
-text-align: center;
 color: white;
+font-size: 14px;
 }
 
 /* This styling previously relied on JS for functionality. It is a placeholder to give the 'idea' of the final product once JS is included. */
@@ -75,10 +76,12 @@ width: 70%;
 margin: 20px auto;
 padding: 20px;
 border-radius: 10px;
-flex-direction: column;
 align-items: center;
 justify-content: space-between;
 background-color: #003366;
+}
+.content {
+text-align: center;
 }
 .content span {
 display: inline-block;
@@ -86,6 +89,8 @@ height: 0;
 overflow: hidden;
 transition: opacity 2s;
 opacity: 0;
+display: block;
+margin-top: 5px;
 }
 .content span.fade-in {
 height: auto;
@@ -99,13 +104,11 @@ background-color: #003366;
 color: white;
 padding: 10px;
 text-align: center;
-font-size: 16px;
-justify-content: right;
-display: inline-block;
+font-size: 14px;
+float: right;
 }
 button:hover {
 cursor: pointer;
-background-color: #002347;
 }
 
 /* Styling for the footer to keep it stretched and pinned to the bottom of the page */
