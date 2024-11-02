@@ -70,15 +70,14 @@ p {
 
 /* This styling previously relied on JS for functionality. It is a placeholder to give the 'idea' of the final product once JS is included. */
 .accordion {
-  background-color: #003366;
-  max-height: 100px;
-  max-width: 600px;
-  text-align: center;
-  margin: 30px;
+  height: 100px;
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
   border-radius: 10px;
-  margin-bottom: 20px;
-  text-align: center;
-  color: white;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #003366;
 }
 .content span {
   display: inline-block;
@@ -92,16 +91,14 @@ p {
   opacity: 1;
 }
 
-.button.expand {
-  background-color: #003366;
+button {
+  text-decoration: none;
   border: none;
+  background-color: #003366;
   color: white;
   padding: 15px 32px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 16px;
-  border-radius: 8px;
   display: inline-block;
 }
 button:hover {
