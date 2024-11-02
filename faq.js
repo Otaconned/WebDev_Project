@@ -1,9 +1,14 @@
 let buttons = document.querySelectorAll('.expand');
 
-buttons.forEach(button => {
-    button.addEventListener('click', function(){
-        let span = button.previousElementSibling;
-        content.classList.toggle('fade-in');
-        button.textContent = content.classList.contains('fade-in') ? 'Read Less' : 'Read More';
+for (let i = 0; i < buttons.length; i++){
+    buttons[i].addEventListener('click', function(event){
+        let span = event.target.previousElementSibling.querySelector('span');
+        span.classList.toggle('fade-in');
+
+        if (span.classList.contains('fade-in')){
+            event.target.textContent = 'Read Less';
+        } else {
+            event.target.textContent = 'Read More';
+        }
     });
-});
+}
