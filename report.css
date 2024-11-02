@@ -68,8 +68,8 @@ form {
 
 /* used to set the space for responses */
 textarea{
-    width: 600x;
-    height: 200px;
+    width: 60%;
+    height: 40%;
 }
 
 /* adjustments to the labels of the form, [for=email] syntax referenced from MDN and textbook on query selector formatting */
@@ -123,6 +123,9 @@ label[for=issue]{
     text-align: center;
     font-family: impact;
     padding: 20px;
+}
+#dismiss {
+    font-size: 10px;
 }
 
 /* Styling for the footer to keep it stretched and pinned to the bottom of the page */
