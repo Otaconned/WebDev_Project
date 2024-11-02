@@ -68,8 +68,8 @@ form {
 
 /* used to set the space for responses */
 textarea{
-    width: 60%;
-    height: 40%;
+    width: 700px;
+    height: 300px;
 }
 
 /* adjustments to the labels of the form, [for=email] syntax referenced from MDN and textbook on query selector formatting */
