@@ -102,6 +102,7 @@ p {
   display: inline-block;
   font-size: 16px;
   border-radius: 8px;
+  display: inline-block;
 }
 button:hover {
   cursor: pointer;
