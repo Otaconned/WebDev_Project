@@ -34,8 +34,8 @@ document.addEventListener("input", function() {
   counter.textContent = remaining;
 
   if (remaining <= 20) {
-    counter.classList.add('warning');
+    counter.classList.add('max');
   } else {
-    counter.classList.remove('warning');
+    counter.classList.remove('max');
   }
 }
