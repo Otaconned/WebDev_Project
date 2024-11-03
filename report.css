@@ -128,6 +128,17 @@ label[for=issue]{
     font-size: 10px;
 }
 
+.counter {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 10px;
+    color: #949494;
+}
+.counter.max {
+    color: #cb4c4e;
+}
+
 /* Styling for the footer to keep it stretched and pinned to the bottom of the page */
 footer {
   position: fixed; /*used to keep the footer pinned to the bottom of the page*/
