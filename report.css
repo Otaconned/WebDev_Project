@@ -82,8 +82,23 @@ label[for=issue]{
     font-family: "impact";
     color: #002347;
 }
-  
-.button {
+
+.textarea {
+    position: relative;
+    display: inline-block;
+}
+.counter {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 10px;
+    color: #949494;
+}
+.counter.max {
+    color: #cb4c4e;
+}
+
+.submit {
     background-color: #003366;
     border: none;
     color: white;
@@ -94,7 +109,7 @@ label[for=issue]{
     font-size: 16px;
     border-radius: 8px;
   }
-.button:hover {
+.submit:hover {
     transform: scale(.98);
     cursor: pointer;
   }
@@ -125,17 +140,6 @@ label[for=issue]{
 }
 .hide {
     display: none;
-}
-
-.counter {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    font-size: 10px;
-    color: #949494;
-}
-.counter.max {
-    color: #cb4c4e;
 }
 
 /* Styling for the footer to keep it stretched and pinned to the bottom of the page */
