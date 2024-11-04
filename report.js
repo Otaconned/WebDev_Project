@@ -1,44 +1,38 @@
-'use strict';
+function characterCounter(obj) {
+  const counter = document.getElementById("counter");
+  let maxChars = 280;
+  let currentChars = obj.value.length;
 
-function validateEmail() {
-  let emailInput = document.getElementById('email');
-  let regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
-  return regex.test(String(emailInput).toLowerCase());
-}
-
-function popUpMessage(message) {
-  popUp.textContent = message;
-  popUp.style.display = "block";
-}
-
-submitButton.addEventListener("click", function (event) {
-  event.preventDefault();
-  
-  const form = document.getElementById('report');
-
-  if (validateEmail()) {
-    popUpMessage("Thank you for your input!");
-    form.reset();
+  if (currentChars >= maxChars) {
+    counter.innerHTML = currentChars;
+    counter.classList.add("max");
   } else {
-    popUpMessage("Please enter a valid email address.");
+    counter.innerHTML = currentChars;
+    counter.classList.remove("max");
   }
+}
+
+function validateForm() {
+  const form = document.getElementById("report");
+  const email = document.getElementById("email");
+  const popUp = document.getElementById("popUp");
+  const regEx = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,5}$/;
+  
+  if (!email.value || !regEx.test(email.value)) {
+    popUp.textContent = "Please use a valid email address.";
+  } else {
+    popUp.textContent = "Thank you for your feedback!";
+    form.reset();
+  }  
+
+  popUp.classList.remove("hide");
+}
+
+document.getElementById("submit").addEventListener("click", function(event) {
+  validateForm();
+  event.preventDefault();
 });
 
-document.getElementById('popUp').addEventListener('click', function(){
-  popUp.style.display = 'none';
-}); 
-
-textArea.addEventListener('input', function () {
-  let area = document.getElementById('textArea');
-  let chars = document.getElementById('counter');
-  let content = this.value;
-
-  chars.textContent = content.length;
-
-  if (200 <= content.length) {
-    chars.classList.add('max');
-  } else {
-    chars.classList.remove('max');
-  }
+document.getElementById("popUp").addEventListener("click", function() {
+  this.classList.add("hide");
 });
