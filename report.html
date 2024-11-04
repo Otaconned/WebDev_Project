@@ -29,7 +29,7 @@
 		  <p>
 			  <label for="issue">Description of Your Issue:</label><br>
 			  <textarea id="issue" name="issue" required></textarea>
-			  <span class="counter">280</span>
+			  <span id="counter">280</span>
 		  </p>
 		  <button id="submit" type="submit">Submit</button>
 	  </form>
@@ -37,7 +37,7 @@
 	  <!--A way to ensure users have access to the FAQ, and have considered the information there before lodging complaint/concerns-->
 	  <p id="note">Wait! Have you checked our <a href="faq.html">FAQ?</a></p>
 	  <!--intended to serve as a popup using an eventListener in JS that is not implemented here-->
-	  <div id="display" style="display:none;"><span id="dismiss">Click to dismiss</span></div>
+	  <div id="popUp" style="display:none;"></div>
   </main>
   <footer>
 	  &copy; 2024 Harrelson. Images used under copyright doctrine of fair use in an educational context. 
