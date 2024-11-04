@@ -29,8 +29,8 @@
 		  </div>
 		  <div class="textarea">
 			  <label for="issue">Description of Your Issue:</label><br>
-			  <textarea id="issue" name="issue" required onkeyup="characterCounter(this);"></textarea>
-			  <p id="counter">0</p>
+			  <textarea id="issue" name="issue" required maxlength="280" onkeyup="characterCounter(this);"></textarea>
+			  <p id="counterText"><span id="counter"></span> of 280 characters remaining!</p>
 		  </div>
 		  <div id="popUp" class="hide"></div>
 		  <div>
