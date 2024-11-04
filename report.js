@@ -17,11 +17,11 @@ submitButton.addEventListener("click", function (event) {
   
   const form = document.getElementById('report');
 
-  if (validateEmail = true) {
+  if (validateEmail()) {
     popUpMessage("Thank you for your input!");
     form.reset();
   } else {
-    popUpMessage("Please enter a valid email address");
+    popUpMessage("Please enter a valid email address.");
   }
 });
 
