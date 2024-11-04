@@ -4,7 +4,7 @@
 let currentIndex = 0;
 
 function carousel(){
-  const slides = Array.from(document.querySelectorAll('.slide'));
+  let slides = Array.from(document.querySelectorAll('.slide'));
   
   slides[currentIndex].classList.remove('active');
   currentIndex = (currentIndex + 1) % slides.length;
@@ -15,7 +15,7 @@ setInterval(carousel, 2000);
 
 /*Function to allow the user to increase/decrease page text with buttons*/
 function increaseFont(increaseBy){
-  const content = document.querySelectorAll('p'); 
+  let content = document.querySelectorAll('p'); 
 
   content.forEach((p) => {
     let style = window.getComputedStyle(p).getPropertyValue('font-size');
@@ -24,7 +24,7 @@ function increaseFont(increaseBy){
   });
 }
 function decreaseFont(decreaseBy){
-  const content = document.querySelectorAll('p'); 
+  let content = document.querySelectorAll('p'); 
 
   content.forEach((p) => {
     let style = window.getComputedStyle(p).getPropertyValue('font-size');
