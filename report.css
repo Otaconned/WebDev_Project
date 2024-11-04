@@ -124,7 +124,7 @@ label[for=issue]{
   }
 
 /* This formatting will interact with JS to help create a pop-up window that thanks the user for their feedback, and prevents the navigation to another page */
-.popUp{
+#popUp{
     position: fixed;
     top: 50%; /*used to center the pop-up*/
     left: 50%;
