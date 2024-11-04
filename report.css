@@ -133,14 +133,6 @@ label[for=issue]{
     display: none;
 }
 
-/* defined via ID for greater control as compared to rest of body section */
-#note{
-    text-align: center;
-    margin-top: 20px;
-    font-size: 12px;
-    font-style: italic;
-  }
-
 /* Styling for the footer to keep it stretched and pinned to the bottom of the page */
 footer {
   position: fixed; /*used to keep the footer pinned to the bottom of the page*/
