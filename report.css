@@ -81,7 +81,7 @@ label[for=issue]{
     font-size: 30px;
     font-family: "impact";
     color: #002347;
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
 .textarea {
@@ -91,15 +91,18 @@ label[for=issue]{
 .counter {
     position: absolute;
     bottom: 5px;
-    right: 5px;
+    right: 10px;
     font-size: 10px;
-    color: #949494;
+    color: white;
+    background-color: #003366;
+    padding: 5px 10px;
+    border-radius: 15px;
 }
 .counter.max {
     color: #cb4c4e;
 }
 
-.submit {
+#submit {
     background-color: #003366;
     border: none;
     color: white;
@@ -110,7 +113,7 @@ label[for=issue]{
     font-size: 16px;
     border-radius: 8px;
   }
-.submit:hover {
+#submit:hover {
     transform: scale(.98);
     cursor: pointer;
   }
