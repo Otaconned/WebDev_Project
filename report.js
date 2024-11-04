@@ -12,7 +12,9 @@ function popUpMessage(message) {
   popUp.style.display = "block";
 }
 
-submitButton.addEventListener("click", function () {
+submitButton.addEventListener("click", function (event) {
+  event.preventDefault();
+  
   const form = document.getElementById('report');
 
   if (validateEmail = true) {
@@ -27,10 +29,11 @@ document.getElementById('popUp').addEventListener('click', function(){
   popUp.style.display = 'none';
 }); 
 
-document.addEventListener("input", function() {
+function updateCounter() {
+  const issueInput = document.getElementById('issue');
   const counter = document.getElementById('counter');
   const maxChars = 280;
-  const remaining = maxChars - issue.value.length;
+  const remaining = maxChars - issueInput.value.length;
 
   counter.textContent = remaining;
 
@@ -40,3 +43,5 @@ document.addEventListener("input", function() {
     counter.classList.remove('max');
   }
 }
+
+issueInput.addEventListener('input', updateCounter);
