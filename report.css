@@ -81,6 +81,7 @@ label[for=issue]{
     font-size: 30px;
     font-family: "impact";
     color: #002347;
+    padding-top: 20px;
 }
 
 .textarea {
