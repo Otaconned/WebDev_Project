@@ -29,19 +29,16 @@ document.getElementById('popUp').addEventListener('click', function(){
   popUp.style.display = 'none';
 }); 
 
-function updateCounter() {
-  const issueInput = document.getElementById('issue');
-  const counter = document.getElementById('counter');
-  const maxChars = 280;
-  const remaining = maxChars - issueInput.value.length;
+textArea.addEventListener('input', function () {
+  let area = document.getElementById('textArea');
+  let chars = document.getElementById('counter');
+  let content = this.value;
 
-  counter.textContent = remaining;
+  chars.textContent = content.length;
 
-  if (remaining <= 20) {
-    counter.classList.add('max');
+  if (200 <= content.length) {
+    chars.classList.add('max');
   } else {
-    counter.classList.remove('max');
+    chars.classList.remove('max');
   }
-}
-
-issueInput.addEventListener('input', updateCounter);
+});
