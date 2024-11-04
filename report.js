@@ -1,8 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const popUp = document.getElementById("popUp");
-  popUp.classList.add("hide");
-});
-
 function characterCounter(obj) {
   const counter = document.getElementById("counter");
   let maxChars = 280;
