@@ -115,6 +115,7 @@ label[for=issue]{
 
 /* This formatting will interact with JS to help create a pop-up window that thanks the user for their feedback, and prevents the navigation to another page */
 #popUp{
+    animation: glideDown .5s ease forwards;
     position: fixed;
     top: 50%; /*used to center the pop-up*/
     left: 50%;
@@ -131,6 +132,11 @@ label[for=issue]{
 }
 .hide {
     display: none;
+}
+
+@keyframes glideDown {
+    from {top: -50%}
+    to {top: 50%}
 }
 
 /* Styling for the footer to keep it stretched and pinned to the bottom of the page */
