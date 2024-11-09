@@ -94,14 +94,12 @@ label[for=issue]{
     color: black;
 }
 .max {
-    animation: nearingMax linear;
+    animation: nearingMax .8s forwards ease;
 }
 @keyframes nearingMax {
     0% {color: black}
-    20% {color: #d77476}
     50% {color: #d16062}
-    70% {color: #cb4c4e}
-    100% {color: #c5393b}
+    100% {color: #cb4c4e}
 }
 
 #submit {
