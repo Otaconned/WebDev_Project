@@ -94,7 +94,7 @@ label[for=issue]{
     color: black;
 }
 .max {
-    animation: nearingMax .8s linear;
+    animation: nearingMax linear;
 }
 @keyframes nearingMax {
     0% {color: black}
