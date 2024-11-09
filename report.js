@@ -3,11 +3,11 @@ function characterCounter(obj) {
   let maxChars = 280;
   let currentChars = obj.value.length;
 
-  if (currentChars >= maxChars) {
-    counter.innerHTML = currentChars;
+  counter.innerHTML = currentChars;
+
+  if (currentChars >= 200) {
     counter.classList.add("max");
   } else {
-    counter.innerHTML = currentChars;
     counter.classList.remove("max");
   }
 }
