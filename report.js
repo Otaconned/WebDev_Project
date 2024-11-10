@@ -1,3 +1,5 @@
+'use strict';
+
 function characterCounter(obj) {
   const counter = document.getElementById("counter");
   let maxChars = 280;
