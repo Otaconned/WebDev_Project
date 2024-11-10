@@ -13,7 +13,7 @@ ul {
 li {
     float: left;
 }
-li a {
+li a { 
     display: block;
     color: white;
     text-align: center;
@@ -93,10 +93,10 @@ label[for=issue]{
     font-size: 12px;
     color: black;
 }
-.max {
+.max { /*Used to smoothly transition the '###' text from black to red*/
     animation: nearingMax .8s forwards ease;
-}
-@keyframes nearingMax {
+} 
+@keyframes nearingMax { /*used to help in creating a gradual shift in the text's color*/
     0% {color: black}
     50% {color: #d16062}
     100% {color: #cb4c4e}
@@ -138,7 +138,7 @@ label[for=issue]{
 .hide {
     display: none;
 }
-
+/*Referenced from a previous assignment with %s used to ensure varying screen accessibility*/
 @keyframes glideDown {
     from {top: -50%}
     to {top: 50%}
