@@ -8,7 +8,7 @@ ul {
     position: fixed; /*used to pin the navbar*/
     top: 0; /*used to keep the header at the top of the page*/
     width: 100%; /*used to stretch the navbar the full window*/
-    font-family: arial;
+    font-family: 'roboto';
 }
 li {
     float: left;
