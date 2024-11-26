@@ -1,14 +1,14 @@
 /* Styling for the navigation bar -- referenced from notes and W3 schools */
 ul {
   list-style-type: none; /* remove default formatting and re-style */
-  background-color: #003366;
+  background-color: #002347;
   margin: 0;
   padding: 0;
   overflow: hidden; /*used to keep content contained*/
   position: fixed; /*used to pin the navbar*/
   top: 0; /*used to keep the header at the top of the page*/
   width: 100%; /*used to stretch the navbar the full window*/
-  font-family: arial;
+  font-family: 'roboto';
 }
 li {
   float: left;
@@ -23,7 +23,7 @@ li a {
 
 /*used to create the apperance of interactivity*/
 li a:hover{
-  background-color: #002347;
+  background-color: #003366;
   cursor: pointer;
 }
 .active {
@@ -51,7 +51,9 @@ li a:hover{
 
 /* body/main components */
 body {
-  background-color:#ffe5cc;
+  font-family: 'Roboto', sans-serif;
+  background-color:#f7f2ed;
+  color: white;
   margin: 0; /* set to 0 to remove defaults and help block div elements */
   padding: 0;
 }
