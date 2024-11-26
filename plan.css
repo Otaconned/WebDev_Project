@@ -1,41 +1,156 @@
 ul {
-  list-style-type: none; /* remove default formatting and re-style */
-  background-color: #003366;
-  margin: 0;
-  padding: 0;
-  overflow: hidden; /*used to keep content contained*/
-  position: fixed; /*used to pin the navbar*/
-  top: 0; /*used to keep the header at the top of the page*/
-  width: 100%; /*used to stretch the navbar the full window*/
-  font-family: arial;
-}
-li {
-  float: left;
-}
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+    list-style-type: none; /* remove default formatting and re-style */
+    background-color: #002347;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /*used to keep content contained*/
+    position: fixed; /*used to pin the navbar*/
+    top: 0; /*used to keep the header at the top of the page*/
+    width: 100%; /*used to stretch the navbar the full window*/
+    font-family: arial;
+  }
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
 
-/*used to create the apperance of interactivity*/
-li a:hover{
-  background-color: #002347;
-  cursor: pointer;
-}
-.active {
-  background-color: #8ecae6;
-}
+    /*used to create the apperance of interactivity*/
+    li a:hover{
+      background-color: #002347;
+      cursor: pointer;
+    }
+    .active {
+      background-color: #005f99;
+    }
 
-footer {
-  position: fixed; /*used to keep the footer pinned to the bottom of the page*/
-  width: 100%; /*used to stretch the footer the width of the page*/
-  left: 0; /*used to correct formatting that caused the footer to appear truncated*/
-  bottom: 0; /*used to ensure the footer registers at the bottom of the page*/
-  background-color: #002347;
-  color: white;
-  font-size: 12px;
-  font-family: arial;
-}
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color:#f7f2ed;
+    color: white;
+    margin: 0; /* set to 0 to remove defaults and help block div elements */
+  }
+
+  main{
+    padding: 2em;
+    display: flex;
+    height: 100%;
+  }
+
+  .calendar-container {
+    flex: 3;
+    padding: 3em;
+    overflow: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 1em;
+  }
+
+  th {
+    background-color: #003366;
+  }
+
+  .drop {
+    height: 150px;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    text-align: center;
+    padding: 0.5em;
+    transition: background-color 0.3s;
+    color: black;
+  }
+  
+  .drop:hover {
+    background-color: #eef;
+  }
+  
+  .drop-img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0.5em auto;
+  }
+
+  .recipe-container {
+    flex: 1;
+    padding: 1em;
+    border-left: 2px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .recipe-container .recipes {
+    flex: 1;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-height: 900px;
+    margin-top: 1em;
+    padding: 0.5em;
+    margin-left: 2em;
+    background-color: #eaf2f8;
+  }
+
+  .recipe-container .recipes div {
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+  }
+
+  .recipe {
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+    background: #f4f4f4;
+    cursor: grab;
+    text-align: center;
+    color: black;
+  }
+
+  .recipe-img {
+    max-width: 80%;
+    height: auto;
+    margin: 0.5em auto;
+  }
+
+  button {
+    background-color: #003366;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+  button:hover {
+    transform: scale(.98); /* used to give the apperance of interactivity */
+    cursor: pointer;
+  }
+  
+  footer {
+    position: fixed; /*used to keep the footer pinned to the bottom of the page*/
+    width: 100%; /*used to stretch the footer the width of the page*/
+    left: 0; /*used to correct formatting that caused the footer to appear truncated*/
+    bottom: 0; /*used to ensure the footer registers at the bottom of the page*/
+    background-color: #002347;
+    color: white;
+    font-size: 12px;
+    font-family: arial;
+  }
