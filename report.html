@@ -25,14 +25,14 @@
 	  <p id="thanks">Thank you for taking the time out of your day to help improve our site! Please allow for up to three days in response time.</p>
 	  <img src="photos/personguiding.png" alt="person guiding">
 	  <!--In the future, this form will be edited to include AJAX functionality, which sends the below entered data to a google sheets for review-->
-	  <form id="report" method="POST" action="#">
+	  <form id="report" method="post" action="https://sheetdb.io/api/v1/iou9b53tgzy3n">
 		  <div>
 			  <label for="email">E-Mail:</label>
-			  <input type="text" id="email" name="email" required>
+			  <input type="text" id="email" name="email[Email]" required>
 		  </div>
 		  <div class="textarea">
 			  <label for="issue">Description of Your Issue:</label><br>
-			  <textarea id="issue" name="issue" required maxlength="280" onkeyup="characterCounter(this);"></textarea>
+			  <textarea id="issue" name="issue[Comment]" required maxlength="280" onkeyup="characterCounter(this);"></textarea>
 			  <p id="counterText">You've used <span id="counter"> 0</span> of 280 characters . . . Have you checked our <a href="faq.html">FAQ?</a></p>
 		  </div>
 		  <div id="popUp" class="hide"></div>
