@@ -1,7 +1,7 @@
 /* Styling for the navigation bar */
 ul {
     list-style-type: none; /* remove default formatting and re-style */
-    background-color: #003366;
+    background-color: #002347;
     margin: 0;
     padding: 0;
     overflow: hidden; /*used to keep content contained*/
@@ -29,8 +29,9 @@ li a:hover{
 
 /* Styling for the body elements */
 body {
-    font-family: "arial";
-    background-color:#ffe5cc;
+    font-family: 'Roboto', sans-serif;
+    background-color:#f7f2ed;
+    color: white;
     margin: 0;
     padding: 0;
     padding-top: 50px;
@@ -44,7 +45,6 @@ main {
 }
 
 h1, p{
-    font-family: "impact";
     color: #002347;
 }
 
