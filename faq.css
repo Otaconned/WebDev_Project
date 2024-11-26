@@ -31,7 +31,7 @@ cursor: pointer;
 body {
 font-family: 'Roboto', sans-serif;
 background-color:#f7f2ed;
-color: white;
+color: #003366;
 margin: 0;
 padding: 0;
 padding-top: 50px; /* used to keep the content from being hidden behind the navigation bar */
