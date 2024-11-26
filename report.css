@@ -1,7 +1,7 @@
 /* Styling for the navigation bar -- referenced from notes and W3 schools */
 ul {
     list-style-type: none; /* remove default formatting and re-style */
-    background-color: #003366;
+    background-color: #002347;
     margin: 0;
     padding: 0;
     overflow: hidden; /*used to keep content contained*/
@@ -23,7 +23,7 @@ li a {
 
 /*used to create the apperance of interactivity*/
 li a:hover{
-    background-color: #002347;
+    background-color: #003366;
     cursor: pointer;
 }
   
@@ -34,8 +34,9 @@ li a:hover{
 
 /* Styling for the body elements */
 body {
-    font-family: "arial";
-    background-color:#ffe5cc;
+    font-family: 'Roboto', sans-serif;
+    background-color:#f7f2ed;
+    color: white;
     margin: 0; /* set to 0 to remove defaults and help block div elements */
     padding: 0;
     padding-top: 50px;
