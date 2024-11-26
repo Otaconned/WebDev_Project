@@ -4,6 +4,9 @@
 	<meta charset="utf-8" />
 	<title>faq</title>
 	<link rel="stylesheet" type="text/css" href="plan.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav>
@@ -15,15 +18,71 @@
 		</ul>
 	</nav>
   <main>
-    
+    <section class="calendar-container">
+		<table>
+			<thead>
+				<tr>
+					<th>Sunday</th>
+            		<th>Monday</th>
+           			<th>Tuesday</th>
+            		<th>Wednesday</th>
+            		<th>Thursday</th>
+            		<th>Friday</th>
+            		<th>Saturday</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="drop"></td>
+					<td class="drop"></td>
+					<td class="drop"></td>
+					<td class="drop"></td>
+					<td class="drop"></td>
+					<td class="drop"></td>
+					<td class="drop"></td>
+				</tr>
+				<tr>
+					<td class="drop"></td>
+					<td class="drop"></td>
+					<td class="drop"></td>
+					<td class="drop"></td>
+					<td class="drop"></td>
+					<td class="drop"></td>
+					<td class="drop"></td>
+				</tr>
+				<tr>
+					<td class="drop"></td>
+					<td class="drop"></td>
+					<td class="drop"></td>
+					<td class="drop"></td>
+					<td class="drop"></td>
+					<td class="drop"></td>
+					<td class="drop"></td>
+				</tr>
+				<tr>
+					<td class="drop"></td>
+					<td class="drop"></td>
+					<td class="drop"></td>
+					<td class="drop"></td>
+					<td class="drop"></td>
+					<td class="drop"></td>
+					<td class="drop"></td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<section class="recipe-container">
+		<div class="recipes"></div>
+		<br><input type="text" id="mealLookup" placeholder="Search for a meal...">
+		<br><button id="searchRecipes">Search Recipes</button>
+	</section>
   </main>
 	<footer>
 		&copy; 2024 Harrelson. Images used under copyright doctrine of fair use in an educational context.
 		<a href="https://validator.w3.org/">Validate HTML</a>
  		<a href="https://jigsaw.w3.org/css-validator/">Validate CSS</a>
 		
-		<!--The placeholder reference to a JS file to be implemented in the future-->
-		<script src="index.js"></script>
+		<script src="plan.js"></script>
 	</footer>
 </body>
 </html>
