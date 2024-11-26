@@ -23,7 +23,7 @@ li a {
 
 /*used to create the apperance of interactivity*/
 li a:hover{
-    background-color: #002347;
+    background-color: #003366;
     cursor: pointer;
 }
 
