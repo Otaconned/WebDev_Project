@@ -8,7 +8,7 @@ overflow: hidden; /*used to keep content contained*/
 position: fixed; /*used to pin the navbar*/
 top: 0; /*used to keep the header at the top of the page*/
 width: 100%; /*used to stretch the navbar the full window*/
-font-family: arial;
+font-family: 'roboto';
 }
 li {
 float: left;
@@ -29,8 +29,9 @@ cursor: pointer;
 
 /* Styling for the body elements */
 body {
-font-family: "arial";
-background-color:#ffe5cc;
+font-family: 'Roboto', sans-serif;
+background-color:#f7f2ed;
+color: white;
 margin: 0;
 padding: 0;
 padding-top: 50px; /* used to keep the content from being hidden behind the navigation bar */
@@ -42,7 +43,6 @@ flex-direction: column;
 }
 
 h1{
-font-family: "impact";
 text-align: center;
 color: #002347;
 }
