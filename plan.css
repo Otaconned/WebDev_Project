@@ -74,7 +74,7 @@ ul {
   }
   
   .drop:hover {
-    background-color: #eef;
+    background-color: #f4f4f4;
   }
   
   .drop-img {
@@ -116,7 +116,7 @@ ul {
     padding: 1em;
     margin-bottom: 0.5em;
     border-radius: 5px;
-    background: #f4f4f4;
+    background-color: #f9f9f9;
     cursor: grab;
     text-align: center;
     color: black;
