@@ -34,7 +34,6 @@ ul {
     background-color:#f7f2ed;
     margin: 0; /* set to 0 to remove defaults and help block div elements */
   }
-
   main{
     padding: 2em;
     display: flex;
@@ -51,13 +50,11 @@ ul {
     width: 100%;
     border-collapse: collapse;
   }
-
   th, td {
     border: 1px solid #ddd;
     text-align: center;
     padding: 1em;
   }
-
   th {
     background-color: #003366;
     color: white;
@@ -72,11 +69,9 @@ ul {
     transition: background-color 0.3s;
     color: black;
   }
-  
   .drop:hover {
-    background-color: #f4f4f4;
+    background-color: #eaf2f8;
   }
-  
   .drop-img {
     max-width: 100px;
     height: auto;
@@ -92,7 +87,6 @@ ul {
     flex-direction: column;
     align-items: center;
   }
-
   .recipe-container .recipes {
     flex: 1;
     overflow-y: auto;
@@ -102,15 +96,13 @@ ul {
     margin-top: 1em;
     padding: 0.5em;
     margin-left: 2em;
-    background-color: #eaf2f8;
+    background-color: #f9f9f9;
   }
-
   .recipe-container .recipes div {
     padding: 0.5em;
     margin-bottom: 0.5em;
     border-radius: 5px;
   }
-
   .recipe {
     border: 1px solid #ccc;
     padding: 1em;
@@ -121,7 +113,6 @@ ul {
     text-align: center;
     color: black;
   }
-
   .recipe-img {
     max-width: 80%;
     height: auto;
