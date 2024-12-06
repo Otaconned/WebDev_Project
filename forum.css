@@ -1,0 +1,137 @@
+/* Styling for the navigation bar -- referenced from notes and W3 schools */
+ul {
+  list-style-type: none; /* remove default formatting and re-style */
+  background-color: #002347;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /*used to keep content contained*/
+  position: fixed; /*used to pin the navbar*/
+  top: 0; /*used to keep the header at the top of the page*/
+  width: 100%; /*used to stretch the navbar the full window*/
+  font-family: 'roboto';
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*used to create the apperance of interactivity*/
+li a:hover{
+  background-color: #003366;
+  cursor: pointer;
+}
+.active {
+  background-color: #005f99;
+}
+
+.resize-text {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #003366;
+  padding: 10px;
+  border-radius: 5px;
+}
+.resize-text button {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 18px;
+}
+.resize-text button:hover {
+  background-color: #002347;
+  cursor: pointer;
+}
+
+/* body/main components */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color:#f7f2ed;
+  color: #003366;
+  margin: 0; /* set to 0 to remove defaults and help block div elements */
+  padding: 0;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px); 
+  padding: 20px; 
+}
+
+/* Consistent use of high-contrast throughout to ensure visibility */
+#forum {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 80%; 
+  max-width: 90%; 
+  min-height: 75%; 
+  border-radius: 8px;
+}
+
+#comments-section div {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#comment-form input,
+#comment-form textarea {
+  width: 98%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  color: black; /* Colored this way to ensure visibility & accessibility */
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 95%;
+  cursor: pointer;
+}
+.delete-btn:hover {
+  background-color: #ff1a1a;
+  cursor: pointer;
+}
+
+button {
+    background-color: #003366;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+  button:hover {
+    transform: scale(.98); /* used to give the apperance of interactivity */
+    cursor: pointer;
+  }
+
+  /* Styling for the footer to keep it stretched and pinned to the bottom of the page */
+footer {
+  position: fixed; /*used to keep the footer pinned to the bottom of the page*/
+  width: 100%; /*used to stretch the footer the width of the page*/
+  left: 0; /*used to correct formatting that caused the footer to appear truncated*/
+  bottom: 0; /*used to ensure the footer registers at the bottom of the page*/
+  background-color: #002347;
+  color: white;
+  font-size: 12px;
+  font-family: arial;
+}
