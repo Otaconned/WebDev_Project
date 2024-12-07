@@ -62,3 +62,36 @@ document.addEventListener("DOMContentLoaded", () => {
         recipesContainer.innerHTML = "<p>Failed to load recipes. Please try again later.</p>";
       });
   };
+
+document.addEventListener('DOMContentLoaded', function () {
+  emailjs.init('YOUR_EMAILJS_USER_ID');
+
+  document.getElementById('invite-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const emailInput = document.getElementById('invite-email').value;
+    const inviteStatus = document.getElementById('invite-status');
+
+    const emailParams = {
+      to_email: emailInput,
+      message: 'You have been invited to join the Sharing Spoon meal planner! Click the link below to participate.',
+    };
+
+    emailjs
+      .send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', emailParams)
+      .then(
+        function () {
+          inviteStatus.textContent = 'Invite sent successfully!';
+          inviteStatus.style.color = 'green';
+        },
+        function (error) {
+          console.error('Failed to send invitation:', error);
+          inviteStatus.textContent = 'Failed to send invitation.';
+          inviteStatus.style.color = 'red';
+        }
+      );
+
+    document.getElementById('invite-email').value = '';
+  });
+});
+
