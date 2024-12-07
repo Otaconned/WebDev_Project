@@ -134,6 +134,51 @@ ul {
     transform: scale(.98); /* used to give the apperance of interactivity */
     cursor: pointer;
   }
+
+#invite-popup {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  width: 250px;
+}
+
+#invite-popup h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+#invite-popup form {
+  display: flex;
+  flex-direction: column;
+}
+#invite-popup input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#invite-popup button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#invite-popup button:hover {
+    transform: scale(.98);
+    background-color: #555;
+    cursor: pointer;
+}
+#invite-status {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: green;
+}
+
   
   footer {
     position: fixed; /*used to keep the footer pinned to the bottom of the page*/
