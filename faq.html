@@ -1,5 +1,6 @@
 <!-- this page is meant to provide users a list of common concerns for using Sharing Spoon. Additionally, I prompted GPT the following as a last-minute verification: 
-What are some ways I can improve accessibility for this page? Implement only SMALL changes (such as aria labels, font sizes, or color swaps) and explain the purpose of their involvement. Do not heavily alter the pre-existing code -->
+What are some ways I can improve accessibility for this page? Implement only SMALL changes (such as aria labels, font sizes, or color swaps) and explain the purpose of their involvement. Do not heavily alter the pre-existing code.
+Aria labels were subsequently added for greater clarity. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,24 +22,24 @@ What are some ways I can improve accessibility for this page? Implement only SMA
 	</nav>
   <main>
 	<h1>Frequently Asked Questions</h1>
-	<img src="photos/givingfeedback.png" alt="A man writing in a journal">
+	<img src="photos/givingfeedback.png" alt="A happy-looking man writing in a journal">
 	<div id="accordion">
 		<h3>What is a Mutual Meal Plan?</h3>
 		<p class="content"> A mutual meal plan is a planner which allows for several individuals to
 		<span>make and manage a rotating number of dishes, usually for the purpose of making cooking easier or more equitable.</span></p>
-		<button class="expand">Read More</button>
+		<button class="expand" aria-controls="content-1" aria-expanded="false">Read More</button>
 	</div>
 	<div id="accordion">
 		<h3>Is There a Mobile App?</h3>
 		<p class="content">Unfortunately, this class only covers web-based development. Ideally, this website would be viewable
 		<span>from a mobile browser, but there may be some compatibility (and skill) issues with conversion to an app.</span></p>
-		<button class="expand">Read More</button>
+		<button class="expand" aria-controls="content-2" aria-expanded="false">Read More</button>
 	</div>
 	<div id="accordion">
 		<h3>How Can I Provide Feedback?</h3>
 		<p class="content">I appreciate any and all feedback on Sharing Spoon, and encourage users to check out our Support
 		<span>page for more information on how to get in contact with me, the creator.</span></p>
-		<button class="expand">Read More</button>
+		<button class="expand" aria-controls="content-3" aria-expanded="false">>Read More</button>
 	</div>
 </main>
 <footer>
@@ -46,7 +47,6 @@ What are some ways I can improve accessibility for this page? Implement only SMA
 	<a href="https://validator.w3.org/">Validate HTML</a>
   	<a href="https://jigsaw.w3.org/css-validator/">Validate CSS</a>
 	
-	<!--in the future, this page will allow for a 'read more/read less' functionality to be utilized on the button(s)-->
 	<script src="faq.js"></script>
 </footer>
 </body>
