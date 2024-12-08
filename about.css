@@ -101,6 +101,6 @@ footer {
     bottom: 0; /*used to ensure the footer registers at the bottom of the page*/
     background-color: #002347;
     color: white;
-    font-size: 12px;
+    font-size: 0.875rem;
     font-family: arial;
   }
