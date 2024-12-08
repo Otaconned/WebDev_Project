@@ -1,4 +1,6 @@
-<!--This page is to serve as a homepage/central navigaton for users-->
+<!--This page is to serve as a homepage/central navigaton for users. Additionally, I prompted GPT the following as a last-minute verification: 
+What are some ways I can improve accessibility for this page? Implement only SMALL changes (such as aria labels, font sizes, or color swaps) and explain the purpose of their involvement. Do not heavily alter the pre-existing code.
+Aria labels were subsequently added for greater clarity. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,10 +14,11 @@
 <body>
 	<nav>
 		<ul>
-  			<li class="active"><a href="index.html">Home</a></li> <!--'active' is used to indicate the page the user is on-->
-  			<li><a href="plan.html">Plan</a></li> <!-- 'dummy' is used to hold the place of inactive links. This would link to the mealplanner -->
-  			<li><a href="forum.html">Talk</a></li> <!-- and this would link to the group hub -->
-  			<li><a href="support.html">Support</a></li>
+  			<li class="active"><a href="index.html" aria-current="page">Home</a></li>
+			<li><a href="plan.html" aria-label="Meal Planner">Plan</a></li>
+			<li><a href="forum.html" aria-label="Discussion Forum">Talk</a></li>
+			<li><a href="support.html" aria-label="Support Page">Support</a></li>
+
 		</ul>
 	</nav>
 	<header class="header-background">
@@ -25,10 +28,11 @@
 		</div>
 	</header>
 	<main>
-		<div class="resize-text">
-			<button id="increase-size" onclick="increaseFont(1)">A+</button>
-			<button id="decrease-size" onclick="decreaseFont(1)">a-</button>
+		<div class="resize-text" aria-live="polite">
+			<button id="increase-size" onclick="increaseFont(1)" aria-label="Increase text size">A+</button>
+			<button id="decrease-size" onclick="decreaseFont(1)" aria-label="Decrease text size">a-</button>
 		</div>
+
 		<div class="main-text">
 			<h1>Welcome to Sharing Spoon!</h1>
 			<p>Sharing Spoon is a mealplanner designed for families and friends. Mealplans can be made and edited using our robust. . .</p>
@@ -47,13 +51,13 @@
 				<button type="button" class="button">About Us</button>
 			</a>
 		</div>
-		<!--When JS is implemented, these images will be automatically cycled through-->
+
 		<div class="carousel-container"> 
 			<ul class="carousel">
 				<li class="slide active"><img src="photos/orangechicken.jpg" alt="A plate of orange chicken"></li>
-				<li class="slide"><img src="photos/Tacos.jpg" alt="A plate with tacos"></li>
+				<li class="slide"><img src="photos/Tacos.jpg" alt="Three tacos with various fillings"></li>
 				<li class="slide"><img src="photos/greenbeans.jpg" alt="A meal with meat and greenbeans"></li>
-				<li class="slide"><img src="photos/seafoodplate.jpg" alt="A salmon dish"></li>
+				<li class="slide"><img src="photos/seafoodplate.jpg" alt="A salmon dish with vegetables"></li>
 			</ul>
 		</div>
 	</main>
@@ -62,7 +66,6 @@
 		<a href="https://validator.w3.org/">Validate HTML</a>
  		<a href="https://jigsaw.w3.org/css-validator/">Validate CSS</a>
 		
-		<!--The placeholder reference to a JS file to be implemented in the future-->
 		<script src="index.js"></script>
 	</footer>
 </body>
