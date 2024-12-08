@@ -1,3 +1,6 @@
+<!-- this page is meant to provide users a list of common concerns for using Sharing Spoon. Additionally, I prompted GPT the following as a last-minute verification: 
+What are some ways I can improve accessibility for this page? Implement only SMALL changes (such as aria labels, font sizes, or color swaps) and explain the purpose of their involvement. Do not heavily alter the pre-existing code.
+Aria labels were subsequently added for greater clarity. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,15 +21,18 @@
 		</ul>
 	</nav>
   <main>
-    <section id="forum">
+    <section id="forum" aria-expanded="true">
         <h2>Comments</h2>
         <div id="comments-section"></div>
     
         <h2>Add a Comment</h2>
         <form id="comment-form">
-            <input type="text" id="comment-name" placeholder="Your Name" required>
+            <label for="comment-name">Your Name</label>
+	    <input type="text" id="comment-name" placeholder="Your Name" required>
+	    <label for="comment-input">Write your comment</label>
             <textarea id="comment-input" placeholder="Write your comment..." required></textarea>
-            <button type="submit">Post Comment</button>
+            <button type="submit">Post Your Comment</button>
+	    <button class="delete-btn" aria-label="Delete this comment">Delete</button>
         </form>
     </section>
   </main>
