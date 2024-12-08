@@ -1,3 +1,6 @@
+<!--This page is to serve as a homepage/central navigaton for users. Additionally, I prompted GPT the following as a last-minute verification: 
+What are some ways I can improve accessibility for this page? Implement only SMALL changes (such as aria labels, font sizes, or color swaps) and explain the purpose of their involvement. Do not heavily alter the pre-existing code.
+Aria labels were subsequently added for greater clarity. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,10 +14,10 @@
 <body>
   <nav>
 		<ul>
-  			<li><a href="index.html">Home</a></li>
-  			<li class="active"><a href="plan.html">Plan</a></li>
-  			<li><a href="forum.html">Talk</a></li> <!-- 'dummy' is used to hold the place of inactive links -->
-  			<li><a href="support.html">Support</a></li>
+  			<li><a href="index.html" aria-current="page">Home</a></li>
+			<li class="active"><a href="plan.html" aria-label="Meal Planner">Plan</a></li>
+			<li><a href="forum.html" aria-label="Discussion Forum">Talk</a></li>
+			<li><a href="support.html" aria-label="Support Page">Support</a></li>
 		</ul>
 	</nav>
   <main>
@@ -22,7 +25,7 @@
 		<table>
 			<thead>
 				<tr>
-					<th>Sunday</th>
+			<th>Sunday</th>
             		<th>Monday</th>
            		<th>Tuesday</th>
             		<th>Wednesday</th>
@@ -73,16 +76,16 @@
 	</section>
 	<section class="recipe-container">
 		<div class="recipes"></div>
-		<br><input type="text" id="mealLookup" placeholder="Search for a meal...">
+		<br><input type="text" id="mealLookup" placeholder="Search for a meal..." aria-label="Search for meals by name">
 		<br><button id="searchRecipes">Search Recipes</button>
 	</section>
 	<div id="invite-popup">
         	<h3>Invite a Person</h3>
         	<form id="invite-form">
-            		<input type="email" id="invite-email" placeholder="Enter email" required>
+            		<input type="email" id="invite-email" placeholder="Enter email" required aria-label="Enter an email to invite someone to this calendar">
             		<button type="submit">Send Invitation</button>
         </form>
-        <div id="invite-status"></div>
+        <div id="invite-status" role="alert"></div>
     </div>
   </main>
 	<footer>
