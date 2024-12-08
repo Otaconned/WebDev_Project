@@ -1,4 +1,6 @@
-<!--This page is meant to serve as a way for users to navigate through the various outlets of support on Sharing Spoon-->
+<!--This page is meant to serve as a way for users to navigate through the various outlets of support on Sharing Spoon. Additionally, I prompted GPT the following as a last-minute verification: 
+What are some ways I can improve accessibility for this page? Implement only SMALL changes (such as aria labels, font sizes, or color swaps) and explain the purpose of their involvement. Do not heavily alter the pre-existing code.
+Aria labels were subsequently added for greater clarity. -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,10 +15,10 @@
 <body>
   <nav>
 		<ul>
-  			<li><a href="index.html">Home</a></li>
-  			<li><a href="plan.html">Plan</a></li> <!-- 'dummy' is used to hold the place of inactive links -->
-  			<li><a href="forum.html">Talk</a></li>
-  			<li class="active"><a href="support.html">Support</a></li> <!--used to indicate the page the user is currently on-->
+  			<li class="active"><a href="index.html" aria-current="page">Home</a></li>
+			<li><a href="plan.html" aria-label="Meal Planner">Plan</a></li>
+			<li><a href="forum.html" aria-label="Discussion Forum">Talk</a></li>
+			<li><a href="support.html" aria-label="Support Page">Support</a></li>
 		</ul>
 	</nav>
   <main> <!-- buttons used as links to other support pages, this serves as a map/naigator -->
@@ -27,19 +29,19 @@
 		  <h2>Our FAQ</h2>
 		  <p>Have a question? You might already find it answered. If you're not encountering a bug, this would be the best place to check for support <br>-- and there's no wait time!</p>
 		  <a href="faq.html">
-			  <button type="button" class="button">FAQ</button>
+			  <button type="button" class="button" role="button" aria-label="Go to FAQ page">FAQ</button>
 		  </a>
 		  
 		  <h2>Get to Know Us</h2>
 		  <p>Interested in what Sharing Spoon is all about? You can read more about the brains behind the operation, the intention for this project,<br>and the methodology used through our 'about' section on the homepage, or by clicking this button.</p>
 		  <a href="about.html">
-			  <button type="button" class="button">About Us</button>
+			  <button type="button" class="button" role="button" aria-label="Go to About Us page">About Us</button>
 		  </a>
 		  
 		  <h2>Contact Us</h2>
 		  <p>If you think you've encountered a bug, have some feedback, or are simply interested in reaching out about professional work, <br>consider sending us a message!</p>
 		  <a href="report.html">
-			  <button type="button" class="button">Report a Problem</button>
+			  <button type="button" class="button" role="button" aria-label="Go to report an issue page">Report a Problem</button>
 		  </a>
 	  </div>
   </main>
