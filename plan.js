@@ -1,3 +1,5 @@
+/* Drop zone functionality, largely referenced from W3Schools. After class on the 3rd, I also prompted CoPilot/GPT "What are some ways that this code can be improved to be more legible and have simplistic functionality? Explain in detail any changes made"
+to ensure clarification and improve efficacy.*/
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("searchRecipes").addEventListener("click", fetchRecipes);
   
@@ -15,7 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
-  
+
+/* Taken from MealDB's API implementation */
   function fetchRecipes() {
     const mealLookup = document.getElementById("mealLookup").value.trim(); // Get user input
     const recipesContainer = document.querySelector(".recipes");
@@ -63,6 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   };
 
+/* Taken from EmailJS' API implementation and reference docs*/
 document.addEventListener('DOMContentLoaded', function () {
   emailjs.init('_jQ-QBXsHK5mHxY_O');
 
