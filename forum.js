@@ -1,5 +1,9 @@
+/*After class on the 3rd, I also prompted CoPilot/GPT "What are some ways that this code can be improved to be more legible and have simplistic functionality? Explain in detail any changes made"
+to ensure clarification and improve efficacy.*/
+
 const MAX_COMMENTS = 3; /* This sets the max number of comments to control a later element */
 
+/* Referenced largely from Tech World Software School's 'Message Board with Vanilla JS', MDNDocs, and previous JSON assignments/Zybooks*/
 function renderComment(commentText, userName, timestamp) {
   const commentsSection = document.getElementById('comments-section');
   const commentDiv = document.createElement('div');
