@@ -1,4 +1,6 @@
-<!--This page is meant to be a way for users to submit a form outlining their concerns/comments/questions-->
+<!--This page is meant to be a way for users to submit a form outlining their concerns/comments/questions. Additionally, I prompted GPT the following as a last-minute verification: 
+What are some ways I can improve accessibility for this page? Implement only SMALL changes (such as aria labels, font sizes, or color swaps) and explain the purpose of their involvement. Do not heavily alter the pre-existing code.
+Aria labels were subsequently added for greater clarity. -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,10 +15,10 @@
 <body>
   <nav>
 		<ul>
-  			<li><a href="index.html">Home</a></li>
-  			<li><a href="plan.html">Plan</a></li> <!-- 'dummy' is used to hold the place of inactive links -->
-  			<li><a href="forum.html">Talk</a></li>
-  			<li><a href="support.html">Support</a></li>
+  			<li><a href="index.html" aria-current="page">Home</a></li>
+			<li><a href="plan.html" aria-label="Meal Planner">Plan</a></li>
+			<li><a href="forum.html" aria-label="Discussion Forum">Talk</a></li>
+			<li><a href="support.html" aria-label="Support Page">Support</a></li>
 		</ul>
 	</nav>
     
@@ -31,11 +33,11 @@
 			  <input type="text" id="email" name="data[Email]" required>
 		  </div>
 		  <div class="textarea">
-			  <label for="issue">Description of Your Issue:</label><br>
-			  <textarea id="issue" name="data[Comment]" required maxlength="280" onkeyup="characterCounter(this);"></textarea>
+			  <input type="text" id="email" name="data[Email]" required aria-label="Enter your email address" autofocus>
+			  <textarea id="issue" name="data[Comment]" required maxlength="280" onkeyup="characterCounter(this);" aria-label="Describe your issue or feedback"></textarea>
 			  <p id="counterText">You've used <span id="counter"> 0</span> of 280 characters . . . Have you checked our <a href="faq.html">FAQ?</a></p>
 		  </div>
-		  <div id="popUp" class="hide"></div>
+		  <div id="popUp" class="hide" role="alert"></div>
 		  <div>
 			  <input type="submit" id="submit">
 		  </div>
