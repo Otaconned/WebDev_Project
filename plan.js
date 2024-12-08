@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-/* Taken from MealDB's API implementation */
+/* Taken from MealDB's API implementation, with tweaking referenced from previous assignments */
   function fetchRecipes() {
     const mealLookup = document.getElementById("mealLookup").value.trim(); // Get user input
     const recipesContainer = document.querySelector(".recipes");
