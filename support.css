@@ -82,6 +82,7 @@ img{
 .button:hover {
   transform: scale(.98); /* used to create the apperance of interactivity */
   cursor: pointer;
+  outline: 2px solid #00172e;
 }
 
 /* Styling for the footer */
