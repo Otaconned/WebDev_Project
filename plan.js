@@ -68,37 +68,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /* Taken from EmailJS' API implementation and reference docs*/
 document.addEventListener('DOMContentLoaded', function () {
-    emailjs.init('_jQ-QBXsHK5mHxY_O');
+  emailjs.init('YOUR_PUBLIC_KEY'); 
 
-    const form = document.getElementById('invite-form');
+  document.getElementById('invite-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+
     const emailInput = document.getElementById('invite-email');
     const inviteStatus = document.getElementById('invite-status');
 
-    form.addEventListener('submit', function (event) {
-        event.preventDefault(); 
-
-        const email = emailInput.value.trim();
-        if (!email) {
-            inviteStatus.textContent = 'Please enter a valid email address.';
-            inviteStatus.style.color = 'red';
-            return;
-        }
-
-        emailjs.send('service_v8qv31l', 'template_ih9w9wi', {
-            to_email: email 
-        }).then(
-            function () {
-                inviteStatus.textContent = 'Invitation sent successfully!';
-                inviteStatus.style.color = 'green';
-            },
-            function (error) {
-                console.error('Failed to send invitation:', error);
-                inviteStatus.textContent = 'Failed to send invitation. Please try again later.';
-                inviteStatus.style.color = 'red';
-            }
-        );
-
-        emailInput.value = ''; 
-    });
+    emailjs.send('service_v8qv31l', 'template_ih9w9wi', {
+      email: emailInput.value, 
+    }).then(
+      function () {
+        inviteStatus.textContent = 'Invite sent successfully!';
+        inviteStatus.style.color = 'green';
+        emailInput.value = '';
+      },
+      function (error) {
+        console.error('Failed to send invitation:', error);
+        inviteStatus.textContent = 'Failed to send invitation. Please try again later.';
+        inviteStatus.style.color = 'red';
+      }
+    );
+  });
 });
 
