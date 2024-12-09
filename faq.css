@@ -110,6 +110,7 @@ border-radius: 10px;
 }
 button:hover {
 cursor: pointer;
+outline: 2px solid #00172e;
 }
 
 /* Styling for the footer to keep it stretched and pinned to the bottom of the page */
