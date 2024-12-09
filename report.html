@@ -30,10 +30,9 @@ Aria labels were subsequently added for greater clarity. -->
 	  <form id="report" method="post" action="https://sheetdb.io/api/v1/iou9b53tgzy3n">
 		  <div>
 			  <label for="email">E-Mail:</label>
-			  <input type="text" id="email" name="data[Email]" required>
+			  <input type="text" id="email" name="data[Email]" required aria-label="Enter your email address" autofocus>
 		  </div>
 		  <div class="textarea">
-			  <input type="text" id="email" name="data[Email]" required aria-label="Enter your email address" autofocus>
 			  <textarea id="issue" name="data[Comment]" required maxlength="280" onkeyup="characterCounter(this);" aria-label="Describe your issue or feedback"></textarea>
 			  <p id="counterText">You've used <span id="counter"> 0</span> of 280 characters . . . Have you checked our <a href="faq.html">FAQ?</a></p>
 		  </div>
