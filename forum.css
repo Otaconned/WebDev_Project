@@ -106,6 +106,7 @@ main {
 .delete-btn:hover {
   background-color: #ff1a1a;
   cursor: pointer;
+  outline: 2px solid #570303;
 }
 
 button {
@@ -122,6 +123,7 @@ button {
   button:hover {
     transform: scale(.98); /* used to give the apperance of interactivity */
     cursor: pointer;
+    outline: 2px solid #00172e;
   }
 
   /* Styling for the footer to keep it stretched and pinned to the bottom of the page */
