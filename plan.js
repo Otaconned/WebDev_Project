@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /* Taken from EmailJS' API implementation and reference docs*/
 document.addEventListener('DOMContentLoaded', function () {
-  emailjs.init('YOUR_PUBLIC_KEY'); 
+  emailjs.init('_jQ-QBXsHK5mHxY_O'); 
 
   document.getElementById('invite-form').addEventListener('submit', function (event) {
     event.preventDefault();
