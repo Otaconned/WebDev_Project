@@ -117,6 +117,7 @@ label[for=issue]{
 #submit:hover {
     transform: scale(.98);
     cursor: pointer;
+    outline: 2px solid #00172e;
   }
 
 /* This formatting will interact with JS to help create a pop-up window that thanks the user for their feedback, and prevents the navigation to another page */
