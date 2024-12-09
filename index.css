@@ -128,6 +128,7 @@ main{
 .button:hover {
   transform: scale(.98); /* used to give the apperance of interactivity */
   cursor: pointer;
+  outline: 2px solid #00172e;
 }
 
 /* image carousel components -- this relies on JS to function correctly, and has been adjusted to display a placeholder image. */
