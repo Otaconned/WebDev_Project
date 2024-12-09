@@ -68,29 +68,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /* Taken from EmailJS' API implementation and reference docs*/
 document.addEventListener('DOMContentLoaded', function () {
-  emailjs.init('_jQ-QBXsHK5mHxY_O');
+    emailjs.init('_jQ-QBXsHK5mHxY_O');
 
-  document.getElementById('invite-form').addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const emailInput = document.getElementById('invite-email').value;
+    const form = document.getElementById('invite-form');
+    const emailInput = document.getElementById('invite-email');
     const inviteStatus = document.getElementById('invite-status');
 
-    emailjs
-      .send('service_v8qv31l', 'template_ih9w9wi')
-      .then(
-        function () {
-          inviteStatus.textContent = 'Invite sent successfully!';
-          inviteStatus.style.color = 'green';
-        },
-        function (error) {
-          console.error('Failed to send invitation:', error);
-          inviteStatus.textContent = 'Failed to send invitation.';
-          inviteStatus.style.color = 'red';
-        }
-      );
+    form.addEventListener('submit', function (event) {
+        event.preventDefault(); 
 
-    document.getElementById('invite-email').value = '';
-  });
+        const email = emailInput.value.trim();
+        if (!email) {
+            inviteStatus.textContent = 'Please enter a valid email address.';
+            inviteStatus.style.color = 'red';
+            return;
+        }
+
+        emailjs.send('service_v8qv31l', 'template_ih9w9wi', {
+            to_email: email 
+        }).then(
+            function () {
+                inviteStatus.textContent = 'Invitation sent successfully!';
+                inviteStatus.style.color = 'green';
+            },
+            function (error) {
+                console.error('Failed to send invitation:', error);
+                inviteStatus.textContent = 'Failed to send invitation. Please try again later.';
+                inviteStatus.style.color = 'red';
+            }
+        );
+
+        emailInput.value = ''; 
+    });
 });
 
